@@ -1,0 +1,2907 @@
+
+<style>
+    .help-block{
+    color:red
+    }
+    .select2-container .select2-selection--single{
+    height:34px !important;
+    }
+    .select2-container--default .select2-selection--single{
+    border: 1px solid #ccc !important; 
+    border-radius: 0px !important; 	
+    }
+    .fieldset-1{
+        margin: 0;
+        padding: 10px;
+      border: 1px solid #515763;
+    }
+    .legend-1{
+        display: block;
+      width: 18%;
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 0.5rem;
+      font-size: 18px;
+      line-height: inherit;
+      color: inherit;
+      white-space: normal;
+      padding: 0px 6px;COLOR: #FFF;
+      BACKGROUND: #418bca;
+    }
+    .legend-width-18{
+        width: 18%;
+    }
+    .legend-width-28{
+        width: 28%;
+    }
+    
+    .legend-width-30 {
+      width: 30%;
+  }
+    
+  
+      .alert-close{
+          right:10px !important;
+          top:5px !important;
+          font-size:28px;
+          margin:0 !important;
+      }
+      .icon-close{
+          background:#dc3545;
+          border-radius:50%;
+          margin: 20px auto;
+          padding: 5px;
+      }
+      .alert-head{
+          color:#dc3545;
+      }
+      .opacity-25{
+          opacity:0.25;
+      }
+      .bottom-btn{
+          bottom:40px;
+          background:#dc3545;
+          border:none;
+          color:white;
+          z-index:1;
+          outline:none !important;
+          transform: translateX(-50%);
+          left:50%;
+      }
+      
+  </style>
+  
+  
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="UTF-8">
+      <title>
+          Project Creation
+   :: PM-AJAY (Pradhan Mantri Anusuchit Jaati Abhyuday Yojna )
+          
+      </title>
+      <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+      <link rel="apple-touch-icon" href="/pmajay/public/latest/images/favicon.png">
+      <link rel="icon" href="/pmajay/public/latest/images/favicon.png">
+  
+      
+      <meta name="csrf-token" content="YvOG6SX4HSYaKNB7F79fHr7QcqoxRpeio94LC7i0">
+      <!-- global css -->
+  
+      <link href="/pmajay/public/css/app.css" rel="stylesheet" type="text/css"/>
+      <link href="/pmajay/public/css/style.css" rel="stylesheet" type="text/css"/>
+      <!-- font Awesome -->
+  
+      <!-- end of global css -->
+      <!--page level css-->
+      <!--page level css -->
+  <link href="/pmajay/public/vendors/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
+  <link href="/pmajay/public/vendors/select2/css/select2.min.css" type="text/css" rel="stylesheet">
+  <link href="/pmajay/public/vendors/select2/css/select2-bootstrap.css" rel="stylesheet">
+  <link href="/pmajay/public/vendors/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+  <link href="/pmajay/public/vendors/iCheck/css/all.css"  rel="stylesheet" type="text/css" />
+  <link href="/pmajay/public/css/pages/wizard.css" rel="stylesheet">
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+    rel = "stylesheet">
+  <script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+      <!--end of page level css-->
+      <style type="text/css">
+          .navbar-nav>.user-menu>.dropdown-menu>li.user-header {
+              width: 100%;
+          }
+          .top-7{margin-top: -7px;}
+  
+  .logo sup {
+      top: -0.75em;
+  }
+  .logo sup .btn{
+      border: none;
+      box-shadow: none!important;
+  }
+  
+  .modal-header .close, button.popModalClose{
+      padding: unset;
+      margin: unset;
+      opacity: 1;top: 0;right: 0;margin-top: -0.9rem;margin-right: -0.5rem;position: absolute;background-color: #fff;border-radius: 50%;border: 2px solid;
+  }
+  button.popModalClose .fa-close, .modal-header .close span{
+      width: 1.5rem;height: 1.5rem;
+      display: block;
+      font-size: unset;
+  }
+      </style>
+      <script src="/pmajay/public/js/app.js" type="text/javascript"></script>
+  </head>
+  <body class="skin-josh">
+  <header class="header">
+      <a href="http://164.100.77.235/pmajay" class="logo">
+          <span class="brand-text ">PM-AJAY <sup><i><span class="btn btn-outline-danger btn-sm rounded-circle active"><strong>BETA</strong></span></i></sup></span>
+      </a>
+      <nav class="navbar navbar-static-top pl-0 pr-0" role="navigation">
+          <!-- Sidebar toggle button-->
+          <div class="top-7">
+              <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                  <div class="responsive_nav"></div>
+              </a>
+          </div>
+          <div class="navbar-right toggle top-7">
+              <ul class="nav navbar-nav  list-inline">
+                 
+                 
+                  <li class=" nav-item dropdown user user-menu">
+                      <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                                      <img src="/pmajay/public/images/authors/no_avatar.jpg" alt="img" height="35px" width="35px"
+                                   class="rounded-circle img-fluid float-left"/>
+                                                  <div class="riot">
+                              <div>
+                                  <p class="user_name_max">Demo </p>
+                                  <p class="user_name_max"> [GIA District - (M)    ]</p>
+  
+                                  <span>
+                                          <i class="caret"></i>
+                                      </span>
+                              </div>
+                          </div>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <!-- User image -->
+                          <li class="user-header bg-light-blue">
+                                                              <img src="/pmajay/public/images/authors/no_avatar.jpg" alt="img" height="35px" width="35px"
+                                       class="rounded-circle img-fluid float-left"/>
+                                                          <p class="topprofiletext">Demo </p>,
+  
+                          </li>
+                          <!-- Menu Body -->
+                          <li>
+                              <a href="http://164.100.77.235/pmajay/users/eyJpdiI6ImdySHhlMWxUNFlOZ1FFY0FySnNhUFE9PSIsInZhbHVlIjoiTDJYNE41M25OSTdXTDRGcXMzZTJ3QT09IiwibWFjIjoiMTc1MzZlYjA3NmVhZTE1YmU2ODQ0MGFjMzJiNGI2NWE5OWIzMTQyMTMzYTc2MGNhYTcyODVjMDU2OTAyNWI5YyJ9">
+                                  <i class="livicon" data-name="user" data-s="18"></i>
+                                 Change Password
+                              </a>
+                          </li>
+                          <li role="presentation"></li>
+                          <li>
+                              <a href="http://164.100.77.235/pmajay/admin/users/update-profile">
+                                  <i class="livicon" data-name="gears" data-s="18"></i>
+                                  Update Profile
+                              </a>
+                          </li>
+                          <!-- Menu Footer-->
+                          <li class="user-footer">
+                              <div class="pull-left">
+                                  <a href="http://164.100.77.235/pmajay/46/lockscreen">
+                                      <i class="livicon" data-name="lock" data-size="16" data-c="#555555" data-hc="#555555" data-loop="true"></i>
+                                      Lock
+                                  </a>
+                              </div>
+                              <div class="pull-right">
+                                  <a href="http://164.100.77.235/pmajay/admin/logout">
+                                      <i class="livicon" data-name="sign-out" data-s="18"></i>
+                                      Logout
+                                  </a>
+                              </div>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+  
+      </nav>
+      
+  </header>
+       
+       
+       <div class="modal fade" id="myModalDasboard" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+           <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            <h4 class="modal-title">Your profile is not complete please complete the profile. </h4>
+          </div>
+           <form method="post" >
+         
+          <div class="modal-footer">
+          <!--<span  id="sendOtp" class="btn btn-success">Send Otp</span>-->
+      
+                   
+          
+          <a href="http://164.100.77.235/pmajay/users/46/edit" class="btn btn-success" >Update</a>
+         <a href="http://164.100.77.235/pmajay/admin/logout" class="btn btn-primary" >Logout</a>
+         
+          </div>
+        </div>
+        </form>
+      </div>
+  </div> 
+      
+  <div class="wrapper ">
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="left-side ">
+          <section class="sidebar ">
+              <div class="page-sidebar sidebar-nav">
+                                  <div class="nav_icons">
+                                  </div>
+                  <div class="clearfix"></div>
+                  <!-- BEGIN SIDEBAR MENU -->
+                  <ul id="menu" class="page-sidebar-menu">
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/dashboard">
+  <i class="livicon" data-name="home" data-size="18" data-c="#c61501" data-hc="#05a325" data-loop="true"></i>
+  <span class="title">Dashboard</span>
+  </a></li><li>
+  <a href="#">
+  <i class="livicon" data-name="list-ul" data-size="18" data-c="#ef6f6c" data-hc="#ffffff" data-loop="true"></i>
+  <span class="title">Manage GIA Projects</span>
+  <span class="fa arrow"></span>
+  </a>
+  <ul class="sub-menu">
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/format1B">
+  <i class="fa fa-angle-double-right"></i>
+  Create  Projects
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/format1B/pending">
+  <i class="fa fa-angle-double-right"></i>
+  Pending Projects
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/format1B/approve">
+  <i class="fa fa-angle-double-right"></i>
+  Approved Projects
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/format1B/reject">
+  <i class="fa fa-angle-double-right"></i>
+  Rejected Projects
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/format1B/revise">
+  <i class="fa fa-angle-double-right"></i>
+  Revised Projects
+  </a>
+  </li>
+  </ul>
+  </li>
+  <li>
+  <a href="#">
+  <i class="livicon" data-name="list-ul" data-size="18" data-c="#418bca" data-hc="#ffffff" data-loop="true"></i>
+  <span class="title">Manage Executing Agency</span>
+  <span class="fa arrow"></span>
+  </a>
+  <ul class="sub-menu">
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/implementingagency/create">
+  <i class="fa fa-angle-double-right"></i>
+  Create Executing Agency
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/sna/imaview">
+  <i class="fa fa-angle-double-right"></i>
+  Pending Executing Agency
+  </a>
+  </li>
+  </ul>
+  </li>
+  <li>
+  <a href="#">
+  <i class="livicon" data-name="list-ul" data-size="18" data-c="#418bca" data-hc="#ffffff" data-loop="true"></i>
+  <span class="title">Manage Skill Institute</span>
+  <span class="fa arrow"></span>
+  </a>
+  <ul class="sub-menu">
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/skill-institute/create">
+  <i class="fa fa-angle-double-right"></i>
+  Create Skill Institute
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/skill-institute/view">
+  <i class="fa fa-angle-double-right"></i>
+  Pending Skill Institute
+  </a>
+  </li>
+  </ul>
+  </li>
+  <li>
+  <a href="#">
+  <i class="livicon" data-name="file-import" data-size="18" data-c="#418bca" data-hc="#ffffff" data-loop="true"></i>
+  <span class="title">Report</span>
+  <span class="fa arrow"></span>
+  </a>
+  <ul class="sub-menu">
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/report/search-projects">
+  <i class="fa fa-angle-double-right"></i>
+  Search  By Project Id
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/annualreport">
+  <i class="fa fa-angle-double-right"></i>
+  Project Summary
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/commonreport">
+  <i class="fa fa-angle-double-right"></i>
+  Common Reports
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/format1B/project-status">
+  <i class="fa fa-angle-double-right"></i>
+  Project Status
+  </a>
+  </li>
+  <li>
+  <a href="http://164.100.77.235/pmajay/admin/State-FinancialYear-Projects">
+  <i class="fa fa-angle-double-right"></i>
+  State Projects Summary
+  </a>
+  </li>
+  </ul>
+  </li>
+  <li>
+  <a href="#">
+  <i class="livicon" data-name="file-export" data-size="18" data-c="#ed9907" data-hc="#ffffff" data-loop="true"></i>
+  <span class="title">User Manual</span>
+  <span class="fa arrow"></span>
+  </a>
+  <ul class="sub-menu">
+  <li>
+  <a href="http://164.100.77.235/pmajay/Writereaddata/User_Manual_District-Aug_2021.pdf" target="_blank">
+  <i class="fa fa-angle-double-right"></i>
+  District User
+  </a>
+  </li>
+  </ul>
+  </li>
+  <li>
+  <a href="https://www.youtube.com/channel/UCvtZvyOHREh-7qO2q0ULNVw" target="_blank">
+  <i class="livicon" data-name="unlink" data-size="18" data-c="#418bca" data-hc="#ffffff" data-loop="true"></i>
+  <span class="title">Tutorial Videos</span>
+  </a></li><li>
+  <a href="https://pmagy.gov.in/" target="_blank">
+  <i class="livicon" data-name="unlink" data-size="18" data-c="#418bca" data-hc="#ffffff" data-loop="true"></i>
+  <span class="title">PMAGY</span>
+  </a></li></ul>
+                  <!-- END SIDEBAR MENU -->
+              </div>
+          </section>
+      </aside>
+      <aside class="right-side">
+          <div class="pt-0 text-danger"><marquee behavior="alternate" scrollamount="15"><strong style="font-size: x-large;">This is training portal of PMAJAY</strong></marquee></div>
+          <!-- Notifications -->
+          <div id="notific111">
+          <style type="text/css">
+  #flashModal li:first-child, #alertModal2 li:first-child{
+      color: unset !important;
+  }
+  #flashModal ul, #alertModal2 ul{
+      margin-block-end: .5rem;
+      padding-inline-start: 1.3rem;
+  }
+  
+  .bg-success{
+          background:#1d7539 !important;
+      }
+      .text-success{
+          color:#1d7539 !important;
+      }
+      .alert-close{
+          right:10px !important;
+          top:5px !important;
+          font-size:28px;
+          margin:0 !important;
+      }
+      .icon-close{
+          background:#dc3545;
+          border-radius:50%;
+          margin: 20px auto;
+          padding: 5px;
+      }
+      .alert-head{
+          color:#dc3545;
+      }
+      .opacity-25{
+          opacity:0.25;
+      }
+      .bottom-btn{
+          bottom:40px;
+          background:#dc3545;
+          border:none;
+          color:white;
+          z-index:1;
+          outline:none !important;
+          transform: translateX(-50%);
+          left:50%;
+      }
+  </style>
+  
+  
+  
+  <!-- alertModal -->
+  <div class="modal fade" id="alertModal2" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div> -->
+          <div class="modal-body">
+              <button type="button" class="close text-danger popModalClose" data-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-close"></i>
+              </button>
+              <div class="row">
+                  <div class="col-md-12 someHtm" style="font-size: 16px;"></div>
+              </div>
+          </div>
+          <!-- <div class="modal-footer" style="padding: 0.25rem 1rem;">
+            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal"><strong>Close</strong></button>
+          </div> -->
+        </div>
+        
+      </div>
+  </div>
+  
+  
+  
+      
+      <div class="modal fade" id="flashModal2" role="dialog">
+      <div class="modal-dialog modal-sm">
+       <div class="modal-body text-left p-2 position-relative text-center">
+        <!-- Modal content-->
+        <div class="modal-content border-0">
+          <button type="button" class="close text-danger popModalClose position-absolute text-dark alert-close border-0" data-dismiss="modal" aria-label="Close">
+                &times;
+          </button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" class="icon-close bg-success p-2" fill="white"><path d="M9 22l-10-10.598 2.798-2.859 7.149 7.473 13.144-14.016 2.909 2.806z"/></svg>
+          <h4 class="alert-head text-success someHtm"><b>Success,</b></h4> 
+          
+          <button type="button" class="bottom-btn position-absolute z-index-1 p-2 px-3 rounded bg-success" data-dismiss="modal" aria-label="Close">Ok</button>
+          <img class="opacity-25" src="/pmajay/public/images/alert-bg2.png" />
+          </div>
+        </div>
+        
+      </div>
+  </div>
+          </div>
+  
+                  <!-- Content -->
+          <section class="content-header">
+    <h1>Project Creation</h1>
+    <ol class="breadcrumb">
+      <li>
+        <a href="http://164.100.77.235/pmajay/admin/dashboard">
+        <i class="livicon" data-name="home" data-size="14" data-color="#000"></i>
+        Dashboard
+        </a>
+      </li>
+      <li class="active"> Project Creation</li>
+    </ol>
+  </section>
+  <section class="content">
+      <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12 my-3">
+        <div class="card panel-primary">
+          <div class="card-heading">
+            <h3 class="card-title">
+              <i class="livicon" data-name="user-add" data-size="18" data-c="#fff" data-hc="#fff" data-loop="true"></i>
+              <!-- Format 1-B (Skill Developemnt Programme)-->Project Creations
+            </h3>
+            <span class="float-right clickable">
+            <i class="fa fa-chevron-up"></i>
+            </span>
+          </div>
+          
+          <div class="card-body">
+            <form id="commentFormm" action="http://164.100.77.235/pmajay/admin/format1B/save" method="POST" enctype="multipart/form-data" class="form-horizontal" autocomplete="off">
+              <!-- CSRF Token -->
+              <input type="hidden" name="_token" value="YvOG6SX4HSYaKNB7F79fHr7QcqoxRpeio94LC7i0" />
+              <div class="">
+                <div class="row">
+                  <div class="col-md-4"></div>
+                  <div class="col-md-4">
+                        <label for="group" class="control-label">Financial Year<span class="error">*</span></label><br>
+                        <input name="fin_year" id="fin_year" type="text" readonly  class="form-control year"  value="2022-2023"  />
+                      </div>
+                 
+                  </div>
+                  <div class="col-md-4"></div>
+                </div>
+                      <div class="clearfix"></div>
+                <fieldset class="fieldset-1">
+                  <legend class="legend-1 legend-width-18">Project Information</legend>
+                  
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label for="userid" class=" control-label">Title of the Project <span class="error">*</span></label>
+                      <div class="form-group">
+                            <input id="project_name" name="project_name" type="text" placeholder="Title of the Project"
+                              class="form-control "  value="" maxlength="150" minlength="10" required/>
+                            <span class="help-block"></span>
+                         
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="userid" class=" control-label">Description and objective of the Project including details of forward and backward linkages as required <span class="error">*</span></label>
+                      <div class="form-group">
+                            <textarea id="project_desc" name="project_desc" type="text" minlength="50" maxlength="1000" placeholder="Minimum 50 and maximum 1000 characters allowed" class="form-control" required></textarea>
+                            <span class="help-block"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                     <label for="userid" class=" control-label">About the target to  be achieved <span class="error">*</span></label>
+                      <div class="form-group">
+                            <textarea id="project_desc" name="target_achieved" type="text" minlength="50" maxlength="1000" placeholder="Minimum 50 and maximum 1000 characters allowed" class="form-control " required></textarea>
+                            <span class="help-block"></span>
+                          
+                      </div>
+                    </div>
+                    
+                    
+      
+                    
+                  </div>
+                </fieldset>
+                <br>
+                <fieldset class="fieldset-1">
+                  <legend class="legend-1 legend-width-18">Expected Timeline</legend>
+                  <div class="row">
+                    <div class="col-md-4">
+                    <label for="userid" class=" control-label">Expected Start Date <span class="error">*</span></label>
+                      <div class="form-group">
+                       
+                            <input name="exp_sdate" id="exp_sdate" type="text"  class="datepicker-3 form-control " data-date-format="DD-MM-YYYY"   placeholder="DD-MM-YYYY" onkeydown="return false"   required >
+                            <span class="help-block"></span>
+                      
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                    <label for="userid" class=" control-label">Expected End Date <span class="error">*</span></label>
+                      <div class="form-group">
+                       
+                            <input name="exp_edate" id="exp_edate" type="text"  class="datepicker-4 form-control " data-date-format="DD-MM-YYYY"   placeholder="DD-MM-YYYY" onkeydown="return false"    >
+                             <span class="help-block"></span>
+                      
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                       <label for="userid" class="control-label">Expected Duration in Days <span class="error">*</span></label>
+                      <div class="form-group">
+                            <input id="exp_dday" name="exp_dday"  data-skip-name="true" type="text" placeholder="Expected Duration in Days" readonly class="form-control exp_dday amount zeronotvalid" maxlength="4" required />
+                            <span class="help-block"></span>
+                            <input  type="hidden" id="expmydate" />
+                          
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <br>
+                <fieldset class="fieldset-1">
+                  <legend class="legend-1 legend-width-28"> Type of Intervention / Project</legend>
+                  
+                  <div class="col-md-12">
+                      <div class="form-group">
+                        <div>
+                          
+                          <div class="">
+                            <div class="">
+                             
+                              <input  name="project_type_ski" type="checkbox" class="" value="2"  id="a2" data-ptag="skilldevelopemnt">&nbsp;&nbsp;   <span>Skill Development</span>&nbsp;&nbsp;
+                              <input  name="project_type_inf" type="checkbox" class="" value="3" id="a3">&nbsp;&nbsp; <span>Infrastructure Development </span>&nbsp;&nbsp;
+                               <input  name="project_type_inc" type="checkbox" class="" value="1"  id="a1" >&nbsp;&nbsp; <span>Income Generation Activity</span>&nbsp;&nbsp;&nbsp;
+                                                          &nbsp;&nbsp;
+                            </div>
+                            <span class="help-block"></span>
+                          </div>
+                          <span style="color:green;font-weight: bold;">For Hybrid project select multiple type of intervention .<br style="margin-bottom: 20px;"></span>
+                        </div>
+                      </div>
+                    </div>
+  
+                 <div id="aa2" style="display: none;">
+                    <h3>Skill Development</h3>
+                    <div  id="skilldevelopemnt" class="col-md-12 skill" >
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            
+                            <div class="radio-parent">
+                              <label class="d-block">Is the executing agency identified ?</label>
+                              <div class="d-block">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label" style="cursor:pointer;">
+                                    <input type="radio" class="form-check-input" name="identify_agency2" value="1" >Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label" style="cursor:pointer;">
+                                    <input type="radio" class="form-check-input" name="identify_agency2" value="0" checked>No
+                                  </label>
+                                </div>
+                              </div>
+                              <div class=" parent-sibling" style="display:none;">
+                              
+                                <label class="d-block">Executing Agency *</label>
+                                 <div class="form-group">
+                                <select name="imp_agency_skill" id="imp_agency_skill" class="form-control">
+                                  <option value=""> --Select Executing Agency-- </option>
+                                                                      <option value="122" > Testing  age, 635 A-win shastri bhavan new delhi</option>
+                                                                      <option value="177" > KKY agency, 635 A-win shastri bhavan new delhi</option>
+                                                                      <option value="237" > Please enter Name of the implementing, Please enter Name of the implementing</option>
+                                                                      <option value="272" > Mohammad Sajid, batla house no 2 noida road</option>
+                                                                      <option value="275" > शेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली से बचें, पैसे की जरूरत हो तभी बेचें अपने शेयरशेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली, शेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली से बचें, पैसे की जरूरत हो तभी बेचें अपने शेयरशेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली</option>
+                                                                      <option value="181" > state kky, 635 A-win shastri bhavan new delhi</option>
+                                                                      <option value="267" > RN tech Agency, vcisdhivudivgepfgdivgaepfihgv</option>
+                                                                      <option value="268" > Zayn Technology, jcnwdfpduibvids</option>
+                                                                      <option value="271" > India, India</option>
+                                                                </select>
+                                </div>
+                              </div>
+                            </div>
+  
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                         <label for="userid" class=" control-label">Type of Skill <span class="error">*</span></label>
+                          <div class="form-group">
+                          
+                             
+                             
+                            
+                                <select class="form-control" name="skill_type" id="skill_type">
+                                  <option value="">---Select skill---</option>
+                                  <option value="1">Up-skilling Programmes</option>
+                                  <option value="2">Short term Training Programmes</option>
+                                  <option value="3">Entreprenurship Development Programmes</option>
+                                  <option value="4">Long Term Training Programmes</option>
+                                </select>
+                                <span class="help-block"></span>
+                              
+                           
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <div class=>
+                              <label for="userid" class=" control-label">Institute Name
+                             <span class="error">*</span></label>
+                              <div class="">
+                                <select class="form-control select3" name="institute_name" id="institute_name">
+                                  <option value="">---Select Institute---</option>
+                                                                  <option value="87">ABC Training centre</option>
+                                                                  <option value="108">Lucknow district School</option>
+                                                                  <option value="140">Rn tech institute</option>
+                                                                  <option value="86">Skill Institute for testing purpose</option>
+                                                                  <option value="23">test</option>
+                                                                  <option value="95">test</option>
+                                                                  <option value="97">Testing data</option>
+                                                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <fieldset class="fieldset-1">
+                        <legend class="legend-1 legend-width-28"> Break up of per beneficiary Cost</legend>
+                        <table class="table table-bordered">
+                          <tr>
+                            <td><strong>Cost per beneficiary (in Rs.)<span class="error">*</span></strong></td>
+                          
+                            <td><strong>No. of Beneficiaries proposed to be supported from Grant-in-aid <span class="error">*</span></strong></td>
+                            <td><strong>Anticipated  expenditure under Grant-in-aid</strong></td>
+                          </tr>
+                          <tr> 
+                    <td><div class="form-group"><input id="cost_beneficiary_s" name="cost_beneficiary_s" type="text"  placeholder="Unit Cost (in Rs.)" class="form-control numToWord zeronotvalid" value="" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" autocomplete="off"><span></span> </div></td>
+                         
+                            <td><div class="form-group"><input id="tt_no_sca_beneficiary_s" name="tt_no_sca_beneficiary_s" type="text" placeholder="Number of Beneficiaries proposed to be supported from Grant-in-aid" class="form-control zeronotvalid" value="" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" autocomplete="off"></div></td>
+                            <td><input id="anticipated_expenditure_sca_s" name="anticipated_expenditure_sca_s" type="text" readonly  placeholder="Total Cost of the Project" class="form-control numToWord" value="0" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"><span></span></td>
+                          </tr>
+                        </table>
+                      </fieldset>
+                      <br>
+                      <div class="declartion">
+                          <h3>Declaration</h3>
+                          <div class="matterd">
+                        <div class="form-group"><input name="skill_declaration" type="checkbox" class="" value="1"  id="skill_declaration" >&nbsp;&nbsp;<span>The state government undertakes to ensure compliance of National Skill Qualification Framework (NSQF) for the courses imparted & Common Norms issued by MSDE amended from time to time.
+                            </span></div><br>
+                            
+                          </div>
+                        </div>
+                         <br><br>
+                        
+                        <table  class="table table-bordered">
+                        <tr>
+                          <th width="30%">Total proposed cost from Grant-in-aid (in Rs.)</th>
+                          <td ><span  id="CGIS"  ></span> </td>
+                         
+                        </tr>
+                      </table>
+                         
+                         <br>
+                      <div><h4 style="color: #418bca;">Physical and Financial Target</h4></div>
+                       <br>
+                      <table id="mytabskill" class="table table-bordered">
+                        <tr>
+                          <th>Financial Year</th>
+                          <th>Summary/Details of Physical Target<span class="error">*</span> </th>
+                          <th>  Financial Year wise break-up of Grants-in-Aid (in Rs.)<span class="error">*</span> </th>
+                        </tr>
+                      </table>
+                       <p class="bg-info d-inline p-1"><strong>Note:</strong> Total of financial year wise required funds should be equal to Total proposed cost from Grant-in-aid. Financial year wise funds requirement is mandatory.</p> 
+                    </div>
+                  </div>
+                  <div id="aa3" style="display: none;">
+                                      <h3>Infrastructure Development</h3>
+                    <div class="row">
+                     
+                      <div class="col-md-6" ><input name="loo" type="checkbox" class="" value="1" id="loo">&nbsp;&nbsp;<span>Is project location Identified ? <span class="error">*</span></span>
+                      </div>
+                    </div>
+                    <div  id="infrastrucure" class="col-md-12 infra " style="display: none;" >
+                      <div class="row">
+                                            </div>
+                                          <div class="form-group d-flex justify-content-between align-items-center col-lg-8" id="areatypemy">
+                        
+                         
+                       <label for="userid" class="control-label">Area Type <span class="error">*</span></label>
+                          
+                        
+                       <label><input type="radio" id="mala" name="areatype" value="1" > Rural</label>
+                         
+                          
+                       
+                      <label > <input type="radio" id="malb" name="areatype" value="2" > Urban</label>
+                           
+                          
+                       
+                      </div>
+                      
+                      
+                      <div class="row" id="cmc" >
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <div class=>
+                              <label for="userid" class=" control-label">Select multiple  Town  <span class="error">*</span></label>
+                              <div class="">
+                                <select class="form-control year  mul-selectv1 state" name="town_id[]" id="town_id" multiple="true">
+                                  <option value="">---Town Name---</option>
+                                </select>
+                                <span class="help-block"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="bmc" >
+                        <div class="col-md-4">
+                         <label for="userid" class="control-label">Village <span class="error">*</span> <small style="color:red;">Select multiple village </small></label>
+                          <div class="form-group">
+                            <div class=>
+                             
+                              <div class="">
+                                <select class="form-control year mul-selectv state" multiple="true" name="village_id[]" id="Village">
+                                  <option value="">---Village Name---</option>
+                                </select>
+                                <span class="help-block"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                                                              <div class="row" id="ifraall1">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <div class=>
+                              <label for="activate" class=" control-label"> Geographical Types <span class="error">*</span></label>
+                              <div class="">
+                                <div class="">
+                                  <input  name="geo_type[]" type="checkbox"
+                                    class=""
+                                    value="1"   >&nbsp;&nbsp;
+                                  <span>Aspirational Districts</span>&nbsp;&nbsp;
+                                  <input  name="geo_type[]" type="checkbox"
+                                    class=""
+                                    value="2" data-ptag="skilldevelopemnt">&nbsp;&nbsp;
+                                  <span>LWE Affected Areas </span>&nbsp;&nbsp;
+                                  <input  name="geo_type[]" type="checkbox"
+                                    class=""
+                                    value="3" >&nbsp;&nbsp;
+                                  <span>NER</span>
+                                  &nbsp;&nbsp;
+                                  <input  name="geo_type[]" type="checkbox"
+                                    class=""
+                                    value="4">&nbsp;&nbsp;
+                                  <span>Hills</span>
+                                  &nbsp;&nbsp;
+                                  <input  name="geo_type[]" type="checkbox"
+                                    class=""
+                                    value="5" >&nbsp;&nbsp;
+                                  <span>PMAGY Villages</span>
+                                  
+                                  <input  name="geo_type[]" type="checkbox"
+                                    class=""
+                                    value="6" >&nbsp;&nbsp;
+                                  <span>SC majority Villages</span>
+                                </div>
+                                <span class="help-block"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                                  
+                      <div class="row" id="ifraall2">
+                        <div class="col-md-4">
+                          <div class="form-group">
+  
+                            <div class="radio-parent">
+                              <label class="d-block">Is the executing agency identified ?</label>
+                              <div class="d-block">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label" style="cursor:pointer;">
+                                    <input type="radio" class="form-check-input" name="identify_agency3" value="1" >Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label" style="cursor:pointer;">
+                                    <input type="radio" class="form-check-input" name="identify_agency3" value="0" checked>No
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="parent-sibling" style="display:none;">
+                                <label class="d-block">Executing Agency <span class="error">*</span></label>
+                                <select name="imp_agency_infra" id="imp_agency_infra" class="form-control">
+                                  <option value=""> --Select Executing Agency-- </option>
+                                                                      <option value="177" > KKY agency, 635 A-win shastri bhavan new delhi</option>
+                                                                      <option value="184" > PWD Kanpur Nagar, Civil Lines</option>
+                                                                      <option value="272" > Mohammad Sajid, batla house no 2 noida road</option>
+                                                                      <option value="275" > शेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली से बचें, पैसे की जरूरत हो तभी बेचें अपने शेयरशेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली, शेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली से बचें, पैसे की जरूरत हो तभी बेचें अपने शेयरशेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली</option>
+                                                                      <option value="181" > state kky, 635 A-win shastri bhavan new delhi</option>
+                                                                      <option value="267" > RN tech Agency, vcisdhivudivgepfgdivgaepfihgv</option>
+                                                                      <option value="268" > Zayn Technology, jcnwdfpduibvids</option>
+                                                                </select>
+                              </div>
+                            </div>
+  
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                        <label for="userid" class=" control-label">Type of Infrastrucure <span class="error">*</span></label>
+                          <div class="form-group">
+                            <div class=>
+                              
+                             
+                              <div class="">
+                                <select class="form-control " name="infra_type" id="infra_type" >
+                                  <option value="">---Type of Infrastrucure---</option>
+                                                                  <option value="6">Agriculture Practices etc.</option>
+                                                                  <option value="8">Digitization</option>
+                                                                  <option value="1">Drinking water and sanitation</option>
+                                                                  <option value="2">Education</option>
+                                                                  <option value="5">Electricity and Clean fuel</option>
+                                                                  <option value="7">Financial Inclusion</option>
+                                                                  <option value="9">Livelihood and Skill Development</option>
+                                                                  <option value="10">Others</option>
+                                                                  <option value="4">Rural Roads and housing</option>
+                                                                  <option value="3">Social Security</option>
+                                                                </select>
+                                <span class="help-block"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                         <label for="userid" class=" control-label">Infrastructure Description <span class="error">*</span></label>
+                          <div class="form-group">
+                            <div class=>
+                             
+                              
+                              <div class="">
+                                <input id="infra_desc" name="infra_desc" type="text" placeholder="Infrastructure Description"
+                                  class="form-control " value=""/>
+                                <span class="help-block"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="infraall3">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr style="text-align: center; background:#95b5cf;color: #000;">
+                              <td><b>Total cost of construction <span class="error">*</span><small>in Rs.</small></b></td>
+                               <td><b>Funds proposed from Others <small>in Rs.</small></b></td>
+                              <td><b>Funds proposed under Grant-in-aid <span class="error">*</span><small>in Rs.</small></b></td>
+                             
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>  <div class="form-group"><input type="text" class="form-control numToWord zeronotvalid" name="total_subsidy_amount_i" id="total_subsidy_amount_i" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"/><span></span></div></td>
+                               
+                              <td>
+                                <table width="100%" id="InputVDP">
+                                  <tr>
+                                    <td><b>Please Specify</b></td>
+                                    <td><b>Amount  <small>in Rs.</small></b></td>
+                                  </tr>
+                              
+                                 <tr class="clonedInput">
+                                    <td>	<div class="form-group"><input type="text" class="form-control textlimt" name="subsidy_other_name_i[]" onkeypress="JavaScript:return AlphabetsOnly(event)"  placeholder="Details"  data-skip-name="true"/></div><span></span></td>
+                                    <td><div class="form-group"> <input type="number" class="fo form-control numToWord" name="subsidy_other_amount_i[]"  placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"/><span></span><div class="infra_Error"></div></div></td>
+                                  </tr>
+                                  
+                                  
+                                  
+                                </table>
+                                <div style="text-align: right;margin-top: 10px;">
+                               <small class="btn btn-danger" id="btnCloneR" style="margin-right: 3px;"><i class="fa fa-minus" style="cursor: pointer;margin: 2px;"></i></small>
+                                  <small class="btn btn-success" id="btnClone" ><i class="fa fa-plus" style="cursor: pointer;margin: 2px;"></i></small>
+                                </div>
+                              <td><div class="form-group"><input type="text" class="form-control numToWord zeronotvalid" name="subsidy_sca2scsp_amount_i" id="subsidy_sca2scsp_amount_i" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"/><span ></span><div class="infra_Error"></div></div>
+                              <div id="subsidy_sca2scsp_amountEror"  style="color:#EF6F6C !important;"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         
+                              </td>
+                        <table class="table table-bordered">
+                          <tr>
+                            <td style="width: 30%"><strong>Approximate SC Beneficiaries <span class="error">*</span></strong></td>
+                            <td>
+                              <!--<strong>No. of Beneficiaries proposed to be supported from Grant-in-aid *</strong>-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> <div class="form-group"><input id="tt_no_beneficiary_i" name="tt_no_beneficiary_i" type="text" placeholder="Approximate SC Beneficiaries" class="form-control numberGreaterZero" value="" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"  autocomplete="off"></div><span></span></td>
+                            <td>
+                              <!--<input id="benefipropsca" name="benefipropsca" type="text" placeholder="Number of Beneficiaries proposed to be supported from Grant-in-aid" class="form-control " value="" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" required="" autocomplete="off">-->
+                            </td>
+                          </tr>
+                        </table>
+                        <br>
+                        <br>
+                        <table  class="table table-bordered">
+                        <tr>
+                          <th width="30%">Total proposed cost from Grant-in-aid (in Rs.)</th>
+                          <td ><span  id="CGIIF"  ></span> </td>
+                         
+                        </tr>
+                      </table>
+                         
+                         <br>
+                        
+                        <div><h4 style="color: #418bca;">Physical and Financial Target </h4></div>
+                        
+                        <table id="mytabinfra" class="table table-bordered">
+                          <tr>
+                            <th>Financial Year</th>
+                            <th>Summary/Details of Physical Target<span class="error">*</span> </th>
+                            <th> Financial Year wise break-up of Grants-in-Aid (Rs.)<span class="error">*</span> </th>
+                          </tr>
+                        </table>
+                         <p class="bg-info d-inline p-1"><strong>Note:</strong> Total of financial year wise required funds should be equal to Total proposed cost from Grant-in-aid. Financial year wise funds requirement is mandatory.</p> 
+                          <br>
+                           <br>
+                        <div class="declartion">
+                          <h3>Declaration(s)</h3>
+                          <div class="matterd">
+                           <div class="form-group">
+                            <input name="u1" type="checkbox" class="" value="1"  id="u1">&nbsp;&nbsp;<span>[A] Certified that adequate suitable land free from encroachment/encumbrance/dispute and with appropriate ownership is available and the work will not be held up on this account.
+                            </span><br />
+                             </div>
+                              <div class="form-group">
+                            <input name="u2" type="checkbox" class="" value="1"  id="u2">&nbsp;&nbsp;<span>[B] Certified that the cost estimate, site map and building plan (Where applicable) have been prepared by PWD/authorized agency and are duly signed by the Executive Engineer or above.</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+  <div id="aa1" style="display: none;">
+                    <div class="">
+                      <h3>Income Generation Activity</h3>
+                      <div class="row">
+                        <div class="col-md-4">
+                         <label for="group" class=" control-label">Domain <span class="error">*</span></label>
+                          <div class="form-group">
+                            
+                                <select class="form-control domain" name="domain" id="domain" >
+                                  <option value="">---Select Domain---</option>
+                                                                  <option value="1">AGRICULTURE AND SOIL CONSERVATION</option>
+                                                                  <option value="6">ANIMAL HUSBANDARY</option>
+                                                                  <option value="12">COOPERATIVES</option>
+                                                                  <option value="7">FISHERIES</option>
+                                                                  <option value="8">FOOD PROCESSING</option>
+                                                                  <option value="9">FORESTRY ECOLOGY AND ENVIRONMENT</option>
+                                                                  <option value="10">HANDICRAFTS AND HANDLOOMS</option>
+                                                                  <option value="4">HORTICLTURE</option>
+                                                                  <option value="11">INDUSTRY, SERVICE AND BUSINESS</option>
+                                                                  <option value="5">MINOR IRRIGATION</option>
+                                                                </select>
+                                <span class="help-block"></span>
+                              
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                        <label for="group" class=" control-label">Sub Domain <span class="error">*</span></label>
+                          <div class="form-group">
+                          
+                              <div class="center">
+                                <select class="form-control domain cmb " name="subdomain" id="subdomain" >
+                                  <option value="">---Select Sub Domain---</option>
+                                </select>
+                                <span class="help-block"></span>
+                                <input type="text" id="extrasubdomain" name="extrasubdomain" class="form-control" style="display: none;">
+                              </div>
+                            
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            
+                            <div class="radio-parent">
+                              <label class="d-block">Is the executing agency identified ?</label>
+                              <div class="d-block">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label" style="cursor:pointer;">
+                                    <input type="radio" class="form-check-input" name="identify_agency1" value="1" >Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label" style="cursor:pointer;">
+                                    <input type="radio" class="form-check-input" name="identify_agency1" value="0" checked>No
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="parent-sibling" style="display:none;">
+                                <label class="d-block">Executing Agency <span class="error">*</span></label>
+                                <select name="imp_agency_income" id="imp_agency_income" class="form-control">
+                                  <option value=""> --Select Executing Agency-- </option>
+                                                                      <option value="177" > KKY agency, 635 A-win shastri bhavan new delhi</option>
+                                                                      <option value="237" > Please enter Name of the implementing, Please enter Name of the implementing</option>
+                                                                      <option value="238" > after removing the  bank, sdfsdfsds sdfsdfsd</option>
+                                                                      <option value="240" > reject check by tester, reject check addreaa</option>
+                                                                      <option value="241" > sdfsfd sdfdsfsd rject, reject  fsdfdsfdsfdsf</option>
+                                                                      <option value="242" > reject al laldf lajfla, reejct alf lasfjlsd fla</option>
+                                                                      <option value="243" > reject option, reject test</option>
+                                                                      <option value="272" > Mohammad Sajid, batla house no 2 noida road</option>
+                                                                      <option value="275" > शेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली से बचें, पैसे की जरूरत हो तभी बेचें अपने शेयरशेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली, शेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली से बचें, पैसे की जरूरत हो तभी बेचें अपने शेयरशेयर बाजार से फायदा कमाने के लिए सही रणनीति जरूरी चढ़ते बाजार में मुनाफा वसूली</option>
+                                                                      <option value="181" > state kky, 635 A-win shastri bhavan new delhi</option>
+                                                                      <option value="267" > RN tech Agency, vcisdhivudivgepfgdivgaepfihgv</option>
+                                                                      <option value="268" > Zayn Technology, jcnwdfpduibvids</option>
+                                                                      <option value="269" > GlobalLogic, Delhi-NCR</option>
+                                                                      <option value="270" > Star, Lko</option>
+                                                                </select>
+                              </div>
+                            </div>
+  
+                          </div>
+                        </div>
+                      </div>
+                      <fieldset class="fieldset-1">
+                       
+                        <table class="table table-bordered">
+                          <tr>
+                            <td><strong>Total cost of activities/assets per beneficiary<span class="error">*</span></strong></td>
+                            <td><strong>No. of Beneficiaries proposed to be supported from Grant-in-aid <span class="error">*</span></strong></td>
+                           
+                          </tr>
+                          <tr>
+                            <td><div class="form-group"><input id="cost_beneficiary" name="cost_beneficiary" type="text" placeholder="Unit Cost (in Rs.)" class="form-control numToWord zeronotvalid" value="" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"  autocomplete="off"><span></span></div></td>
+                            
+                            <td><div class="form-group"><input id="tt_no_sca_beneficiary" name="tt_no_sca_beneficiary" type="text" placeholder="Number of Beneficiaries proposed to be supported from Grant-in-aid" class="form-control zeronotvalid" value="" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" autocomplete="off"></div></td>
+                            
+                          </tr>
+                        </table>
+                       
+                      </fieldset>
+                      <br><br>
+                      <fieldset class="fieldset-1">
+                       <legend class="legend-1 legend-width-30"> Breakup of average cost of activity/asset per beneficiary</legend>
+                      <table class="table table-bordered">
+                        <tr style="text-align: center; background:#95b5cf;color: #000;">
+                         <td><strong>Loan From Bank/Corporation (in Rs.) <span class="error">*</span></strong></td>
+                         <td><strong>Own Sources / Beneficiary Contribution (in Rs.)</strong></td>
+                          <td colspan="2"><strong>Financial assistance (Subsidy)</strong></td>
+                          <td ><strong>Others if any (in Rs.)</strong></td>
+                          
+                          
+                        </tr>
+                        <tr style="text-align: center;">
+                          <td rowspan="2"></td>
+                          
+                         <td rowspan="2"></td>
+                          <td colspan="2"></td>
+                     
+                         
+                        </tr>
+                        <tr>
+                         
+                         <td ><strong>State funds (in Rs.)</strong></td>
+                          <td><strong>Grant-in-aid from PMAJAY (in Rs.)</strong></td>
+                        </tr>
+                        <tr>
+                           
+                           <td><div class="form-group"><input type="number" class="form-control numToWord addValue zeronotvalid" name="loan_bank_amount" id="loan_bank_amount"   placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"><span></span><div class="income_Eror"></div></div>
+                           </td>
+                         
+                         <td><div class="form-group"><input type="number"   class="form-control numToWord addValue " value="0" name="own_amount" id="own_amount" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"><span></span><div class="income_Eror"></div></div></td>
+                         <td><div class="form-group"><input type="number" class="form-control numToWord addValue" name="subsidy_other_amount" id="subsidy_other_amount" value="0" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"><span></span><div class="income_Eror"></div></div></td>
+                           <td><input type="text" class="form-control numToWord addValue" name="subsidy_sca2scsp_amount" id="subsidy_sca2scsp_amount" placeholder="Amount" value="0" readonly="" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"></td>
+                          <td><div class="form-group"><input type="number" class="form-control numToWord addValue" name="loan_others_amount" id="loan_others_amount" value="0" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"><span></span><div class="income_Eror"></div></div></td>
+                          
+                        </tr>
+                      </table>
+                      <p class="bg-info d-inline p-1"><strong>Note:</strong>Grants-in-Aid from PMAJAY would be upto Rs. 50,000 or 50% of the acquisition/creation of assets cost, whichever is less.</p> 
+                      </fieldset>
+                      </br>
+                      
+                      <br>
+                        <table  class="table table-bordered">
+                        <tr>
+                          <th width="30%">Total proposed cost from Grant-in-aid (in Rs.)</th>
+                          <td ><span  id="CGIIN"  ></span> </td>
+                         
+                        </tr>
+                      </table>
+                         
+                      <div><h4 style="color: #418bca;">Physical and Financial Target</h4></div>
+                      <table id="mytabincome" class="table table-bordered">
+                        <tr>
+                          <th>Financial Year</th>
+                          <th>Summary/Details of Physical Target<span class="error">*</span> </th>
+                          <th> Financial Year wise break-up of Grants-in-Aid (Rs.)<span class="error">*</span> </th>
+                        </tr>
+                      </table>
+                      <p class="bg-info d-inline p-1"><strong>Note:</strong> Total of financial year wise required funds should be equal to Total proposed cost from Grant-in-aid. Financial year wise funds requirement is mandatory.</p> 
+                    </div>
+                  </div>
+                 
+  
+                 <!--=========================-->
+                  <div id="aa4" style="display: none;">
+                    <h3> Monitoring, Evaluation and Supervision </h3>
+                    <div  id="infrastrucure" class="col-md-12 infra " >
+                    </div>
+                    <div class="">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>S.No.</th>
+                            <th>Source of funds</th>
+                            <th>Amount <small>in Rs.</small></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Grant-in-aid  <input type="hidden" value="1" name="source_of_funds_mon[]" /> </td>
+                            <td><input type="text" class="form-control numToWord" name="subsidy_sca2scsp_amount_m" id="subsidy_sca2scsp_amount_m" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"/><span></span></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>State Resources <input type="hidden" value="7" name="source_of_funds_mon[]" /></td>
+                            <td><input type="text" class="form-control numToWord" name="subsidy_other_amount_m" id="subsidy_other_amount_m" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"/><span></span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div id="aa5" style="display: none;">
+                    <h3>Support to State Scheduled Caste Corporation</h3>
+                    <div  id="infrastrucure" class="col-md-12 infra " >
+                    </div>
+                    <div class="">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>S.No.</th>
+                            <th>Source of funds</th>
+                            <th>Amount <small>in Rs.</small></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Grant-in-aid  <input type="hidden" value="1" name="source_of_funds_support[]" /> </td>
+                            <td><input type="text" class="form-control numToWord" name="subsidy_sca2scsp_amount_sa" id="subsidy_sca2scsp_amount_sa" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"/><small></small></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>State Resources <input type="hidden" value="7" name="source_of_funds_support[]" /></td>
+                            <td><input type="text" class="form-control numToWord" name="subsidy_other_amount_sa" id="subsidy_other_amount_sa" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true"/><small></small></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </fieldset>
+                <br>
+                <fieldset class="fieldset-1">
+                  <legend class="legend-1 legend-width-28">Total Project Cost (Rs.)</legend>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table table-bordered">
+                        <tr>
+                          <th class="text-center">Intervention Type </th>
+                          <th class="text-center"> Total cost (in Rs.)</th>
+                          <th class="text-center">Total  cost under Grant-in-aid (in Rs.)</th>
+                          
+                        </tr>
+                        
+                        <tr>
+                          <td>Skill Development </td>
+                            <td><input type="text" class="form-control n  numToWord"  value="0" id="stt"  name="stt" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" readonly /><span></span></td>
+                          <td><input type="text" class="form-control m  numToWord" id="sst"  value="0"  name="sst" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" readonly /><span></span></td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Infrastructure Development </td>
+                          <td><input type="text" value="0" class="form-control n  numToWord" id="itt" name="itt" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" readonly /><span></span></td>
+                          <td><input type="text" value="0" class="form-control m  numToWord" id="ist" name="ist" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" readonly /><span></span></td>
+                          
+                        </tr>
+                        <tr>
+                          <td> Income Generation Activity</td>
+                           <td><input type="text" value="0" class="form-control n  numToWord" id="tt" name="tt" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" readonly /><span></span></td>
+                          <td><input type="text" class="form-control m  numToWord" value="0" id="st" name="st" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" readonly /><span></span></td>
+                         
+                        </tr>
+                                              <tr >
+                          <td><b>Total Cost</b> </td>
+                          <td><input type="text"  value="0" class="form-control  numToWord" id="gst"  name="gst" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" readonly /><span></span></td>
+                          <td><input  value="0" type="text" class="form-control  numToWord" id="gtt"  name="gtt" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" readonly /><span></span></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </fieldset>
+                <br>	
+              </div>
+              <br>
+              
+              
+  
+              <div class="form-group  text-right">
+                <div class="col-sm-offset-2 col-sm-11">
+                  <button type="submit" class="btn btn-success" id="asd">
+                  Save                </button>
+                  <a href="http://164.100.77.235/pmajay/admin/format1B/create"  class="btn btn-danger" > Cancel</a>
+                </div>
+              </div>
+            </form>
+            <div class="clearfix"></div>
+            <br>
+            
+            
+            <!--main content-->
+            <div id="loaddata"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--row end-->
+  </section>
+  
+      <!-- alertModal -->
+    <div class="modal fade" id="alertModalN" role="dialog">
+      <div class="modal-dialog">
+     
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header py-0 border-0">
+            <button type="button" class="close text-danger popModalClose" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+          <div class="modal-data">
+            <p>Some text in the modal.</p>
+          </div>
+          <!-- <div class="modal-footer" style="padding: 0.25rem 1rem;">
+            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal"><strong>Close</strong></button>
+          </div> -->
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    <div class="modal fade" id="alertModal" role="dialog">
+      <div class="modal-dialog modal-md">
+       <div class="modal-body text-left p-2 position-relative text-center">
+        <!-- Modal content-->
+        <div class="modal-content border-0">
+          <button type="button" class="close text-danger popModalClose position-absolute text-dark alert-close border-0" data-dismiss="modal" aria-label="Close">
+                &times;
+          </button>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="40" height="40" class="icon-close">
+                <g stroke="white" stroke-width="16" stroke-linecap="round">
+                  <path d="M8 8l112 112" class="stroke-length animation-delay-0"/>
+                  <path d="M8 120L120 8" class="stroke-length animation-delay-6"/>
+                </g>
+          </svg>
+          <h4 class="alert-head"><b>Ooops,</b></h4>
+          <div class="modal-data alert-content text-left px-3"  id=""  >	
+            <ol class="pl-3">
+              
+            </ol>
+          </div>
+          <button type="button" class="bottom-btn position-absolute z-index-1 p-2 px-3 rounded" data-dismiss="modal" aria-label="Close">Try Again</button>
+          <img class="opacity-25" src="/pmajay/public/images/alert-bg.png" />
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+  
+  
+      </aside>
+      <!-- right-side -->
+  </div>
+  <!--<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top"
+     data-toggle="tooltip" data-placement="left">
+      <i class="livicon" data-name="plane-up" data-size="18" data-loop="true" data-c="#fff" data-hc="white"></i>
+  </a>-->
+  <!-- global js -->
+  
+  
+  <script src="/pmajay/public/js/functions.js" type="text/javascript"></script>
+  
+  
+  
+  
+  <!-- end of global js -->
+  <!-- begin page level js -->
+  <script src="/pmajay/public/vendors/iCheck/js/icheck.js"> </script>
+  <script src="/pmajay/public/vendors/moment/js/moment.min.js" > </script>
+  <script src="/pmajay/public/vendors/jasny-bootstrap/js/jasny-bootstrap.js"  type="text/javascript"> </script>
+  <script src="/pmajay/public/vendors/select2/js/select2.js" type="text/javascript"> </script>
+  <script src="/pmajay/public/vendors/bootstrapwizard/jquery.bootstrap.wizard.js" type="text/javascript"> </script>
+  <script src="/pmajay/public/vendors/bootstrapvalidator/js/bootstrapValidator.min.js" type="text/javascript"> </script>
+  <script src="/pmajay/public/vendors/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"> </script>
+  
+  
+   <script src="/pmajay/public/js/pages/create_grant_in_ad.js"></script>
+  
+  <script>
+  
+  
+  function getCurrentFinancialYear() {
+          var financial_year = "";
+          var today = new Date();
+          if ((today.getMonth() + 1) <= 3) {
+              financial_year = "31-03" + "-" + today.getFullYear()
+          } else {
+              financial_year = "31-03" + "-" + (today.getFullYear() + 1)
+          }
+          var today = moment().format("YYYY/MM/DD");
+          var new_start = financial_year.split("-").reverse().join("-");
+          
+          var start = moment(today);
+          var end = moment(new_start);
+          var days=end.diff(start, "days");
+         return days;
+         
+      }
+      
+      function getMonthMax(selected) {
+          
+          //var selected ='31-03-2023';
+          var today = moment().format("YYYY/MM/DD");
+          var start = selected.split("-").reverse().join("-");
+          var startDate = moment(start); 
+          var endDate =startDate.add(27, 'months').format("YYYY-MM-DD");
+          var start = endDate.split("-").reverse().join("-");
+          
+          //var start = moment(start);
+          //var end = moment(endDate);
+          //var days=end.diff(start, "days");
+         return start;
+         
+      }
+      function getDateMax(selected) {
+          
+          //var selected ='31-03-2023';
+          var today = moment().format("YYYY/MM/DD");
+          var start = selected.split("-").reverse().join("-");
+          var startDate = moment(start); 
+          var endDate =startDate.add(9, 'days').format("YYYY-MM-DD");
+          var start = endDate.split("-").reverse().join("-");
+          
+         return start;
+         
+      }
+      
+      var alertMsg=[];
+    $(function() {
+  
+               //var maxDate = moment().add(15, 'month').toDate();
+             var minDate = moment().add(0, 'month');
+             var maxDate = getCurrentFinancialYear()+'D';
+             
+        $(".datepicker-3").datepicker({
+             changeMonth: true,
+              changeYear: true,
+               dateFormat: "dd-mm-yy",
+               keepOpen:false,
+               useCurrent: false,
+               minDate: '01-04-2022',
+               maxDate: maxDate,
+               onSelect: function(selected) {
+                   var maxDateMonth=getMonthMax(selected);
+                   var minDateD=getDateMax(selected);
+                  
+                   
+             $(".datepicker-4").datepicker("option","minDate", minDateD);
+              $(".datepicker-4").datepicker("option","maxDate", maxDateMonth);
+              $(".datepicker-4").val('');
+              $("#exp_dday").val('');
+               $('#commentFormm').bootstrapValidator('revalidateField', 'exp_sdate');
+              
+          }
+        });
+      
+      $(".datepicker-4").datepicker({
+              changeMonth: true,
+              changeYear: true,
+               dateFormat: "dd-mm-yy",
+               keepOpen:false,
+               useCurrent: false,
+                //maxDate: '1000D',
+         
+      });
+      
+      
+      
+      
+      $('.datepicker-4').datepicker({
+          dateFormat: "dd-mm-yy",
+      }).on('change', function(e) {
+          // Revalidate the date field
+          //$('#commentFormm').bootstrapValidator('revalidateField', 'exp_edate');
+          
+          var validator = $('#commentFormm').data('bootstrapValidator');
+         $("#exp_dday,#exp_edate").each(function() {
+           validator.addField($(this));
+          });
+          
+      });
+           
+    })
+    
+    $(function(){
+        
+      
+       $( "body" ).on( "change",'#exp_edate', function() { 
+       $("#mytabincome,#mytabskill,#mytabinfra").find("tr:gt(0)").remove();
+           var ded = $(".datepicker-3").val();
+             var exp_edate = $("#exp_edate").val();
+       //	console.log(ded);
+           var newdate = ded.split("-").reverse().join("-");    	
+              var date = new Date(newdate);
+            var newdate2 = exp_edate.split("-").reverse().join("-");    	
+              var date2 = new Date(newdate2);     
+          days = parseInt($("#exp_dday").val(), 10);
+           if(!isNaN(date.getTime()) && !isNaN($("#exp_dday").val()) && days>0){
+               date.setDate(date.getDate() + days);            
+           //$("#expmydate").val(date.toInputFormat());  
+             
+           var spi = date.toInputFormat();
+           var spi1 = date2.toInputFormat();
+               newdate = newdate.split("-");
+               var  m = newdate[1].replace(/^0+/, '');
+          var  y = newdate[0];
+           var newdate1 = spi1.split("-");      
+          var  m1 = newdate1[1].replace(/^0+/, '');
+          var  y1 = newdate1[0];
+           if(m < 4){
+              var yn = (parseInt(y)-1)+"-"+y;
+            }
+            else {
+              var yn = y+"-"+ (parseInt(y)+1);
+            }
+            if(m1 < 4){
+              var yn1 = (parseInt(y1)-1)+"-"+y1;
+            }
+            else {
+              var yn1 = y1+"-"+ (parseInt(y1)+1);
+            }
+      
+        var ynn= yn.split("-");
+        var yn11= yn1.split("-");
+        var splashArray = new Array();
+        for(i = parseInt(ynn[0]); i< (parseInt(yn11[1])); i++ )
+            {
+                var m = i+"-"+(parseInt(i)+1);
+                splashArray.push(m);
+            }
+            //console.log(splashArray);
+          var validator = $('#commentFormm').data('bootstrapValidator');
+    while (splashArray.length) {  
+      if (splashArray.length) { 
+        var d =splashArray.shift();
+        var newItem = "<tr>\<td>"+d+"<input type='hidden' value='"+d+"' name='finyearincome[]'><input type='hidden' value='1' name='interincome'></td>\<td><div class='form-group'><input type='text' class='form-control finyearincomeph ' name='finyearincomeph[]' placeholder='Physical target of the financial year (Min. 10 max 150 characters)'><span></span></div></td>\<td><div class='form-group'><input type='number' class='form-control finyearincomefi numToWord zeronotvalid' name='finyearincomefi[]' placeholder='Financial year wise break-up in Rs.'><span></span></div></td>\</tr>";
+        var newItem1 = "<tr>\<td>"+d+"<input type='hidden' value='"+d+"' name='finyearskill[]'><input type='hidden' value='2' name='interskill'></td>\<td><div class='form-group'><input type='text' class='form-control finyearskillph' name='finyearskillph[]' placeholder='Physical target of the financial year (Min. 10 max 150 characters)'><span></span></div></td>\<td><div class='form-group'><input type='number' class='form-control finyearskillfi numToWord zeronotvalid' name='finyearskillfi[]' placeholder='Financial year wise break-up in Rs.'><span></span></div></td>\</tr>";
+        var newItem2 = "<tr>\<td>"+d+"<input type='hidden' value='"+d+"' name='finyearinfra[]'><input type='hidden' value='3' name='interinfra'></td>\<td><div class='form-group'><input type='text' class='form-control finyearinfraph' name='finyearinfraph[]' placeholder='Physical target of the financial year (Min. 10 max 150 characters)'><span></span></div></td>\<td><div class='form-group'><input type='number' class='form-control finyearinfrafi numToWord zeronotvalid' name='finyearinfrafi[]' placeholder='Financial year wise break-up in Rs.'><span></span></div></td>\</tr>";  
+        
+        $("#mytabincome tr:last").after(newItem);
+        $("#mytabskill tr:last").after(newItem1); 
+        $("#mytabinfra tr:last").after(newItem2);
+  
+      $(".finyearincomeph,.finyearskillph,.finyearinfraph,.finyearincomefi,.finyearskillfi,.finyearinfrafi").each(function() {
+           validator.addField($(this));
+          });
+          
+          
+          
+          
+      };
+    };   
+         } else { 
+            alertMsg=[]; 
+            if(isNaN(date.getTime())){
+                alertMsg.push('Invalid Expected Start Date');
+              }
+              if($(this).hasClass('exp_dday')==true && (isNaN($("#exp_dday").val()) || !days>0)){
+                alertMsg.push('Invalid Expected Duration in Days');
+              }
+                    if(alertMsg.length>0){
+                        $("#alertModal .modal-data").html("");
+                        $("#alertModal .modal-data").html('<ol style="padding-inline-start: 1rem;"></ol>');
+                        jQuery.each(alertMsg, function(i, val) {
+                            $("#alertModal .modal-data ol").append('<li>'+val+'</li>');
+                          });
+                        $("#alertModal").modal();
+                    }
+          }
+       });
+       Date.prototype.toInputFormat = function() {
+          var yyyy = this.getFullYear().toString();
+          var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based
+          var dd  = this.getDate().toString();
+          return yyyy + "-" + (mm[1]?mm:"0"+mm[0]) + "-" + (dd[1]?dd:"0"+dd[0]); // padding
+       };
+    })
+   
+    
+    $("body #asd").click(function(event){
+                // event.preventDefault();
+              
+      var project_type_inc = $("input[name='project_type_inc']:checked").val();
+      var project_type_ski =  $("input[name='project_type_ski']:checked").val();
+      var project_type_inf = $("input[name='project_type_inf']:checked").val();		
+        alertMsg=[];
+    var sum =sum1=sum2 = 0;
+    var a = parseInt($("#subsidy_sca2scsp_amount").val())*parseInt($("#tt_no_sca_beneficiary").val());
+    
+    
+    var b = $("#anticipated_expenditure_sca_s").val();
+    var c = $("#subsidy_sca2scsp_amount_i").val();
+    if(a == ''){
+        a =0;
+    }
+    if(b == ''){
+        b =0;
+    }
+    if(c == ''){
+        c =0;
+    }
+    $('.finyearincomefi').each(function(){		
+    if($(this).val() ==''){
+        $(this).val(0);
+    }
+    sum += parseInt($(this).val());	
+    });
+    $('.finyearskillfi').each(function(){		
+    if($(this).val() ==''){
+        $(this).val(0);
+    }
+    sum1 += parseInt($(this).val());	
+    });
+    $('.finyearinfrafi').each(function(){		
+    if($(this).val() ==''){
+        $(this).val(0);
+    }
+    sum2 += parseInt($(this).val());	
+    });
+    if ($('input[name=project_type_inc]').prop('checked')) {	
+    if(a != sum){
+        alertMsg.push("Income Generation Activity :: Sum of Financial year wise breakup of Grants-in-Aid should be equal to total proposed funds from Grant-in-aid.");
+    }
+    
+    
+    
+    }
+    if ($('input[name=project_type_ski]').prop('checked')) {
+    if(b != sum1){
+        alertMsg.push("Skill Development :: Sum of Financial year wise breakup of Grants-in-Aid should be equal to total proposed funds from Grant-in-aid.");
+    }
+    
+    }
+   if ($('input[name=project_type_inf]').prop('checked')) {
+     if(c != sum2){
+        alertMsg.push("Infrastructure Development :: Sum of Financial year wise breakup of Grants-in-Aid should be equal to total proposed funds from Grant-in-aid.");
+    }
+    
+    }
+         infrastructureDevelopment();
+            incomeGenerationActivity();
+  
+            if(alertMsg.length>0){
+                $("#alertModal .modal-data").html("");
+                $("#alertModal .modal-data").html('<ol style="padding-inline-start: 1rem;"></ol>');
+                jQuery.each(alertMsg, function(i, val) {
+                    $("#alertModal .modal-data ol").append('<li>'+val+'</li>');
+                  });
+                $("#alertModal").modal();
+                return false;
+            }
+          
+      
+      var variable=1;	
+      if( (project_type_inc=="" || project_type_inc==undefined) && (project_type_ski=="" || project_type_ski==undefined) && (project_type_inf=="" || project_type_inf==undefined) ){						
+          variable=0;
+          alertMsg.push("Invalid Type of Intervention / Project.");
+          if(alertMsg.length>0){
+              $("#alertModal .modal-data").html("");
+              $("#alertModal .modal-data").html('<ol style="padding-inline-start: 1rem;"></ol>');
+              jQuery.each(alertMsg, function(i, val) {
+                  $("#alertModal .modal-data ol").append('<li>'+val+'</li>');
+              });
+              $("#alertModal").modal();
+              return false;
+          }
+          return false;
+      } 
+      
+      
+       var $validator = $('#commentFormm').data('bootstrapValidator').validate();
+      
+       if ($validator.isValid()) {
+              document.getElementById("commentFormm").submit();
+          
+        }
+      
+    });
+  
+    $('.addValueLast').blur(function() {
+      alertMsg=[];
+      incomeGenerationActivity();
+      if(alertMsg.length>0){
+        $("#alertModal .modal-data").html("");
+        $("#alertModal .modal-data").html('<ol style="padding-inline-start: 1rem;"></ol>');
+        jQuery.each(alertMsg, function(i, val) {
+          $("#alertModal .modal-data ol").append('<li>'+val+'</li>');
+        });
+        $("#alertModal").modal();
+        return false;
+      }
+    });
+  
+    $('#cost_beneficiary, #tt_no_sca_beneficiary, input.addValue').blur(function() {
+      totalOfBreakup();
+    });
+  
+    function totalOfBreakup(){
+      var val_total=0;var val_single=0;
+      $("input.addValue").each(function(){
+        val_single=parseInt($(this).val());
+        val_total+=(!isNaN(val_single))?val_single:0;
+      });
+      
+      
+    }
+  
+    function incomeGenerationActivity(){
+      if ($('input[name=project_type_inc]').prop('checked')) {
+          var cost_benry=parseInt($('#cost_beneficiary').val());
+          var ttno_benry=parseInt($('#tt_no_sca_beneficiary').val());
+          var max_total=cost_benry;
+          var val_total=0;
+          $("input.addValue").each(function(){
+            val_total+=parseInt($(this).val());
+          });
+         
+          if(val_total!=max_total){
+            alertMsg.push("Income Generation :: Sum of all sources should be equal to<br> \"Total cost of activities/assets per beneficiary\"");
+            $("input.addValue").each(function(){
+              $(this).addClass('border-danger');
+            });
+          }else{
+            $("input.addValue").each(function(){
+              $(this).removeClass('border-danger');
+            });
+          }
+          if(isNaN(cost_benry)){
+            alertMsg.push("Cost per beneficiary field is required.");
+            $('#cost_beneficiary').addClass('border-danger');
+          }else{
+            $('#cost_beneficiary').removeClass('border-danger');
+          }
+          if(isNaN(ttno_benry)){
+            alertMsg.push("No. of Beneficiaries proposed to be supported from Grant-in-aid field is required.");
+            $('#tt_no_sca_beneficiary').addClass('border-danger');
+          }else{
+            $('#tt_no_sca_beneficiary').removeClass('border-danger');
+          }
+          
+        }
+    }
+    
+    
+    function infrastructureDevelopment(){
+     if ($('input[name=project_type_inf]').prop('checked')) {
+    
+     
+      var x=parseInt($('#subsidy_sca2scsp_amount_i').val());
+      var z=parseInt($('#total_subsidy_amount_i').val());
+     
+     
+    if(isNaN(z)){
+            alertMsg.push("Total cost of construction.");
+            $('#total_subsidy_amount_i').addClass('border-danger');
+          }else{
+            $('#total_subsidy_amount_i').removeClass('border-danger');
+          }
+     if(isNaN(x)){
+            alertMsg.push("Funds proposed under Grant-in-aid.");
+            $('#subsidy_sca2scsp_amount_i').addClass('border-danger');
+          }else{
+            $('#subsidy_sca2scsp_amount_i').removeClass('border-danger');
+          }
+          
+     
+     if(z!=''){
+   
+       var sum=0;
+       $('.fo').each(function(){
+            if($(this).val()){
+            sum += parseInt($(this).val());  
+          }else{
+               sum += 0; 
+          }  
+        });
+        var total=sum+parseInt($('#subsidy_sca2scsp_amount_i').val());
+        if(total!=z){
+             alertMsg.push("Infrastructure Development :: Cost of construction is not equal to total of Funds proposed from others and Grants-in-Aid.");
+          
+        }
+    
+     }
+    
+    }}
+  
+    $('#domain').change(function() {
+        var domain_id = $(this).val();
+        if (domain_id) {
+            $.ajax({
+                type:"GET",
+                url:"http://164.100.77.235/pmajay/api/get-subdomain-list?domain_id="+domain_id,
+                success:function(res) {
+                    if (res) {
+                        $("#subdomain").empty();
+                        $("#subdomain").append('<option value="">-- Select Sub Domain</option>');
+                        $.each(res,function(key, value) {
+                            $("#subdomain").append('<option value="'+key+'">'+value+'</option>');
+                        });
+                        $("#subdomain").append('<option value="999">Others</option>');
+                    } else {
+                        $("#subdomain").empty();
+                    }
+                }
+            });
+        } else {
+            $("#subdomain").empty();
+            $("#domain").empty();
+        }
+    });
+    $("#subdomain").change(function(){
+        if($("#subdomain").val()=='999'){
+            $('#extrasubdomain').attr('required',true);
+            $("#extrasubdomain").show();
+            
+        }
+        else {
+            $('#extrasubdomain').attr('required',false);
+            $("#extrasubdomain").hide();
+        }
+        
+    })
+    // $("#infrastrucure,#skilldevelopemnt").slideUp();
+    $(document).ready(function() {
+        $('#unit_cost,#expbeneficiaries').blur(function(){
+            var unit_cost=$('#unit_cost').val();
+            var expbeneficiaries = $('#expbeneficiaries').val();
+            var ttotal=unit_cost*expbeneficiaries;
+            var vttcost = $('#ttcost').val(ttotal);
+        });
+        $('#benefipropsca').blur(function(){
+            var expbeneficiaries = $('#expbeneficiaries').val();
+            var benefipropsca =$('#benefipropsca').val();
+            if(parseInt(expbeneficiaries) < parseInt(benefipropsca)){
+                alertMsg=[]; 
+              alertMsg.push('Total No. of expected beneficiaries will be less than No. of Beneficiaries proposed to be supported from Grant-in-aid');
+                if(alertMsg.length>0){
+                    $("#alertModal .modal-data").html("");
+                    $("#alertModal .modal-data").html('<ol style="padding-inline-start: 1rem;"></ol>');
+                    jQuery.each(alertMsg, function(i, val) {
+                          $("#alertModal .modal-data ol").append('<li>'+val+'</li>');
+                      });
+                    $("#alertModal").modal();
+                }
+                $('#benefipropsca').val('');
+            }
+        })
+                    $('#mala').click(function(){
+                        $('#Village').attr('required',true);
+                        $('#town_id').attr('required',false);
+                    })
+                    $('#malb').click(function(){
+                        $('#town_id').attr('required',true);
+                        $('#Village').removeAttr('required',false);
+                    })
+                    
+    });
+  
+    $(function() {
+        $("#bmc,#cmc,#areatypemy,#ifraall1,#ifraall2,#ifraall3").hide();
+        $("input[name='areatype']").change(function() {
+            var a =$("input[name='areatype']:checked").val();
+            if ( a =="1") {
+                $('#bmc').slideDown();
+                $('#cmc').slideUp();
+                $("#ifraall1,#ifraall2,#ifraall3").show();
+                $('#infra_type,#infra_desc').attr('required',true);
+            } else if ( a =="2") {
+                $('#bmc').slideUp();
+                $('#cmc').slideDown();
+                $("#ifraall2,#ifraall3").show();
+                $("#ifraall1").hide();
+                $('#infra_type,#infra_desc').attr('required',true);
+            }
+        });
+    })
+  
+    $(function(){
+        $('#a1').change(function(){
+            if(this.checked){
+                $('#aa1').fadeIn('slow');            
+            $("#domain,#subdomain").attr('required', true);}
+            else {
+                $('#aa1').fadeOut('slow');
+              $("#domain,#subdomain").attr('required', false);
+              
+              }
+        });
+        $('#a2').change(function(){
+            if(this.checked){
+                $('#aa2').fadeIn('slow');
+            // $("#imp_agency_skill").attr('required', true);
+            }
+            else {
+                $('#aa2').fadeOut('slow');
+            // $("#imp_agency_skill").attr('required', false);
+            }
+        });
+        $('#a3').change(function(){
+            if(this.checked){
+                $('#aa3').fadeIn('slow');
+            $("#issc,#loo,#u1,#u2,#Village,#district,#infra_type,#infra_desc").attr('required', true);
+            $('input[name="areatype"]').attr('required', true);
+            $("#issc,#loo,#mala,#malb").prop('checked', false);
+    $("#lo,#areatypemy,#cmc,#bmc,#ifraall1,#ifraall2,#ifraall3").hide();
+            
+            }
+            else {
+                $('#aa3').fadeOut('slow');
+              $("#issc,#loo,#u1,#u2,#Village,#district,#infra_type,#infra_desc,#town_id").attr('required', false);
+              $("#issc,#loo,#mala,#malb").prop('checked', false);
+              $('input[name="areatype"]').attr('required', false);
+                 var ina = $("#ist").val();
+    var inaa =	 $("#itt").val();
+    $("#ist,#itt").val("0");
+    var gstt = $("#gst").val();
+    var gttt = $("#gtt").val();
+    var fing= parseInt(gstt)- parseInt(ina);
+    var fingt = parseInt(gttt)- parseInt(inaa);
+    $("#gst").val(fing);
+    $("#gtt").val(fingt);
+    }
+           
+        });
+         $('#a4').change(function(){
+            if(this.checked)
+                $('#aa4').fadeIn('slow');
+            else
+            {
+                 $('#aa4').fadeOut('slow');
+                var ina = $("#mst").val();
+    var inaa =	 $("#mtt").val();
+    $("#mst,#mtt").val("0");
+    var gstt = $("#gst").val();
+    var gttt = $("#gtt").val();
+    var fing= parseInt(gstt)- parseInt(ina);
+    var fingt = parseInt(gttt)- parseInt(inaa);
+    $("#gst").val(fing);
+    $("#gtt").val(fingt);
+            }
+        });
+         $('#a5').change(function(){
+            if(this.checked)
+                $('#aa5').fadeIn('slow');
+            else {
+                $('#aa5').fadeOut('slow');
+                var ina = $("#ssst").val();
+    var inaa =	 $("#sstt").val();
+    $("#ssst,#sstt").val("0");
+    var gstt = $("#gst").val();
+    var gttt = $("#gtt").val();
+    var fing= parseInt(gstt)- parseInt(ina);
+    var fingt = parseInt(gttt)- parseInt(inaa);
+    $("#gst").val(fing);
+    $("#gtt").val(fingt); 
+            }
+        });
+        
+        $('#issc').change(function(){
+            if(this.checked){
+                $('#lo').fadeIn('slow');
+            $("#loo").attr('required', true);
+            
+            }
+            else {
+                $('#lo').fadeOut('slow');
+             $("#loo").attr('required', false);
+             $("#loo").prop('checked', false);
+             $('#infrastrucure').fadeOut('slow');
+             }
+        });
+        $('#loo').change(function(){
+           var userType = "4";
+            if(this.checked){
+            $('#infrastrucure,#areatypemy').fadeIn('slow');
+            if( userType == 3){
+                $('input[name="areatype"]').attr('required',false);
+                $("#ifraall2,#ifraall3").show();
+            }    	
+            else {
+            $("#bmc,#cmc,#ifraall1,#ifraall2,#ifraall3").hide();
+            $('input[name="areatype"]').attr('required',true);
+            }
+                var userType = "4";
+            var state = "9";
+            var district	 = "157";
+            $("#u1,#u2,#Village,#district,#infra_type,#infra_desc,#town_id").attr('required',true);
+                if(userType ==4)
+                {
+            
+            if (district) {
+                $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-village-list-Gia?state_id="+state+"&district_id="+district, success:function(res) {
+                        if (res) {
+                            $("#Village").empty();
+                            $("#Village").append('<option value=""> --Select Village-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#Village").append('<option value="'+key+'">'+key+'/'+value+'</option>');
+                            });
+                            $(".mul-selectv").select2({
+                        placeholder: "-- Search Villages--", //placeholder
+                        tags: false,
+                        tokenSeparators: ['/',',',';'," "]
+                    });
+                        } else {
+                            $("#Village").empty();
+                        }
+                    }
+                    
+                });
+                $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-town-list?state_id="+state+"&district_id="+district, success:function(res) {
+                        if (res) {
+                             $("#town_id").empty();
+                             $("#ward_id").empty();
+                            $("#town_id").append('<option value=""> --Select Town-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#town_id").append('<option value="'+key+'">'+value+'</option>');
+                            });
+                                $(".mul-selectv1").select2({
+                        placeholder: "-- Search Town --", //placeholder
+                        tags: false,
+                        tokenSeparators: ['/',',',';'," "]
+                    });
+                        } else {
+                            $("#town_id").empty();
+                            $("#GramPanchayat").empty();
+                            $("#Village").empty();
+                        }
+                    }
+                });
+            } 
+            
+            else {
+                $("#Village").empty();
+            }
+        //});
+    }
+           // $("#lo").attr('required', true);
+            
+            }
+            else {
+                $('#infrastrucure').fadeOut('slow');
+                $("#u1,#u2,#Village,#district,#town_id,#infra_type,#infra_desc").attr('required',false);
+                $('input[name="areatype"]').attr('required',false);
+                $("#bmc,#cmc,#ifraall1,#ifraall2,#ifraall3").hide();
+                $('input[name="areatype"]').prop('checked', false);
+             //$("#lo").attr('required', true);}
+                    }
+        });
+         $('#town_id').on('change',function() {
+            var state = "9";
+            var district	 = "157";
+            var town = $('#town_id').val();
+            
+            if (state) {
+                $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-ward-list?state_id="+state+"&district_id="+district+"&town="+town, success:function(res) {
+                        if (res) {
+                            $("#ward_id").empty();
+                            $("#ward_id").append('<option value=""> --Ward No.-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#ward_id").append('<option value="'+key+'">'+value+'</option>');
+                            });
+                        } else {
+                        //	$("#GramPanchayat").empty();
+                        //	$("#Village").empty();
+                        }
+                    }
+                });
+            } else {
+            //	$("#GramPanchayat").empty();
+            //	$("#Village").empty();
+            }
+        });
+        
+    })
+    function isNumber(evt){
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if(charCode > 31 && (charCode < 48 || charCode > 57))
+    {
+    return false;
+    }
+    return true;
+    }
+    $(function() {
+        //$('#state').change(function() {
+            var stateID = "9";
+            if (stateID) {
+                var userType = "4";
+                if(userType ==4)
+                {
+                    $('#district').attr('required',true);
+                    $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-city-list?state_id="+stateID, success:function(res) {
+                        if (res) {
+                            $("#district").empty();
+                            $("#Block").empty();
+                            $("#GramPanchayat").empty();
+                            //$("#district").append('<option value="" > --Select District-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#district").append('<option value="'+key+'">'+value+'</option>');
+                            });
+                        } else {
+                            $("#district").empty();
+                            $("#Block").empty();
+                            $("#GramPanchayat").empty();
+                            $("#Village").empty();
+                        }
+                    }
+                });
+                }
+                else{
+                    $('#district').removeAttr('required',false);
+                $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-city-list?state_id="+stateID, success:function(res) {
+                        if (res) {
+                            $("#district").empty();
+                            $("#Block").empty();
+                            $("#GramPanchayat").empty();
+                            //$("#district").append('<option value=""> --Select District-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#district").append('<option value="'+key+'">'+value+'</option>');
+                            });
+                            $(".mul-select").select2({
+                        placeholder: "-- Search District--"
+                    });
+                        } else {
+                            $("#district").empty();
+                            $("#Block").empty();
+                            $("#GramPanchayat").empty();
+                            $("#Village").empty();
+                        }
+                    }
+                });
+            }
+        }
+             else {
+                $("#district").empty();
+                $("#Block").empty();
+                $("#GramPanchayat").empty();
+                $("#Village").empty();
+            }
+        });
+        
+        $('#district').on('change',function() {
+            var state = $('#state').val();
+            var district = $('#district').val();
+            if (state) {
+                $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-block-list?state_id="+state+"&district_id="+district, success:function(res) {
+                        if (res) {
+                            $("#Block").empty();
+                            $("#GramPanchayat").empty();
+                            $("#Block").append('<option value=""> --Select Block-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#Block").append('<option value="'+key+'">'+value+'</option>');
+                            });
+                            $(".mul-select").select2({
+                        placeholder: "-- Search Village--"
+                    });
+                        } else {
+                            $("#Block").empty();
+                            $("#GramPanchayat").empty();
+                            $("#Village").empty();
+                        }
+                    }
+                });
+            } else {
+                $("#Block").empty();
+                $("#GramPanchayat").empty();
+                $("#Village").empty();
+            }
+        });
+        $('#district').on('change',function() {
+            var state = $('#state').val();
+            var district = $('#district').val();
+            if (state) {
+                $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-town-list?state_id="+state+"&district_id="+district, success:function(res) {
+                        if (res) {
+                             $("#town_id").empty();
+                             $("#ward_id").empty();
+                            $("#town_id").append('<option value=""> --Select Town-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#town_id").append('<option value="'+key+'">'+value+'</option>');
+                            });
+                        } else {
+                            $("#town_id").empty();
+                            $("#GramPanchayat").empty();
+                            $("#Village").empty();
+                        }
+                    }
+                });
+            } else {
+                $("#Block").empty();
+                $("#GramPanchayat").empty();
+                $("#Village").empty();
+            }
+        });
+        $('#town_id').on('change',function() {
+            var state = $('#state').val();
+            var district = $('#district').val();
+            var town = $('#town_id').val();
+            if (state) {
+                $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-ward-list?state_id="+state+"&district_id="+district+"&town="+town, success:function(res) {
+                        if (res) {
+                            $("#ward_id").empty();
+                            $("#ward_id").append('<option value=""> --Ward No.-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#ward_id").append('<option value="'+key+'">'+value+'</option>');
+                            });
+                        } else {
+                        //	$("#GramPanchayat").empty();
+                        //	$("#Village").empty();
+                        }
+                    }
+                });
+            } else {
+            //	$("#GramPanchayat").empty();
+            //	$("#Village").empty();
+            }
+        });
+        $('#Block').on('change',function() {
+            var state = $('#state').val();
+            var district = $('#district').val();
+            var block = $('#Block').val();
+            if (state) {
+                $.ajax({type:"GET", url:"http://164.100.77.235/pmajay/api/get-gp-list?state_id="+state+"&district_id="+district+"&block_id="+block, success:function(res) {
+                        if (res) {
+                            $("#GramPanchayat").empty();
+                            $("#GramPanchayat").append('<option value=""> --Select Gram Panchayat-- </option>');
+                            $.each(res,function(key, value) {
+                                $("#GramPanchayat").append('<option value="'+key+'">'+value+'</option>');
+                            });
+                        } else {
+                            $("#GramPanchayat").empty();
+                            $("#Village").empty();
+                        }
+                    }
+                });
+            } else {
+                $("#GramPanchayat").empty();
+                $("#Village").empty();
+            }
+        });
+        
+   $("#cost_beneficiary,#tt_no_sca_beneficiary,#loan_bank_amount,#own_amount,#subsidy_other_amount,#loan_others_amount").blur(function(){
+        var totalcst = parseInt($("#cost_beneficiary").val());
+      var tbi = parseInt($("#tt_no_sca_beneficiary").val());
+      var cd=parseInt($("#subsidy_sca2scsp_amount").val());
+      
+      var lo=parseInt($("#loan_bank_amount").val());
+      var ow=parseInt($("#own_amount").val());
+      var su=parseInt($("#subsidy_other_amount").val());
+      var la=parseInt($("#loan_others_amount").val());
+      
+      
+      if(isNaN(lo)){
+            lo =0;
+        }
+      if(isNaN(ow)){
+            ow =0;
+        }
+      if(isNaN(su)){
+            su =0;
+        }
+      if(isNaN(la)){
+            la =0;
+        }
+      
+      var za=totalcst-(lo+ow+su+la);
+        
+        cd = totalcst/2;
+        if(cd < 50000){
+            cd = cd;
+        }
+        else {
+            cd = 50000;
+        }
+      
+      
+      if(za<cd){
+          cd = za;
+      }else{
+          cd = cd;
+          
+      }
+      if(cd>0){
+      
+      
+        var expd = totalcst *tbi;
+        if(isNaN(expd)){
+            expd =0;
+        }
+        
+        $("#tt").val(expd);
+      
+      var expd2 = cd *tbi;
+        if(isNaN(expd2)){
+            expd2 =0;
+        }
+      
+      if(lo>0){
+            
+      parseInt($("#subsidy_sca2scsp_amount").val(cd));
+      $("#st").val(expd2);
+      $("#CGIIN").text(expd2);
+      }
+      
+     
+        var sum = 0;
+        var sum1 =0;
+        $('.m').each(function(){
+        sum += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    })
+    $('.n').each(function(){
+        sum1 += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    })
+    $('#gst').val(sum1);
+    $('#gtt').val(sum);
+    
+      }
+      //totalOfBreakup();
+    });
+  $("#cost_beneficiary_s,#tt_no_sca_beneficiary_s").blur(function(){	
+    var cb = parseInt($("#cost_beneficiary_s").val());
+    
+    var expd = cb *(parseInt($("#tt_no_sca_beneficiary_s").val()));
+        if(isNaN(expd)){
+            expd =0;
+        }
+        $("#anticipated_expenditure_sca_s,#sst").val(expd);
+      $("#anticipated_expenditure_sca_s,#stt").val(expd);
+      $("#CGIS").text(expd);
+        
+      
+        var sum = 0;
+        var sum1 =0;
+        $('.m').each(function(){
+        sum += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    });
+    $('.n').each(function(){
+        sum1 += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    });
+    
+    
+    $('#gst').val(sum1);
+    $('#gtt').val(sum);
+    });
+  $("#subsidy_sca2scsp_amount_i,#total_subsidy_amount_i").blur(function(){	
+    var nb = parseInt($("#subsidy_sca2scsp_amount_i").val());
+    var bc = parseInt($("#total_subsidy_amount_i").val());
+    
+    if(isNaN(nb)){
+            nb =0;
+        }
+      
+      if(isNaN(bc)){
+            nb =0;
+        }
+   $("#CGIIF").text(nb);
+    $("#ist").val(nb);
+    $("#itt").val(bc);
+    var sum = 0;
+        var sum1 =0;
+        $('.m').each(function(){
+        sum += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    });
+    $('.n').each(function(){
+        sum1 += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    });
+    $('#gtt').val(sum);
+    $('#gst').val(sum1);
+    
+        });
+  $("#subsidy_sca2scsp_amount_m,#subsidy_other_amount_m").blur(function(){	
+        var nb = parseInt($("#subsidy_sca2scsp_amount_m").val());
+    var bc = parseInt($("#subsidy_sca2scsp_amount_m").val())+ parseInt($("#subsidy_other_amount_m").val());
+    if(isNaN(nb)){
+            nb =0;
+        }
+        if(isNaN(bc)){
+            bc =0;
+        }
+   
+    $("#mst").val(nb);
+    $("#mtt").val(bc);
+    var sum = 0;
+        var sum1 =0;
+        $('.m').each(function(){
+        sum += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    });
+    $('.n').each(function(){
+        sum1 += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    });
+    $('#gst').val(sum);
+    $('#gtt').val(sum1);
+        });
+   $("#a1").change(function(){
+    if($("#a1").prop('checked') == true){
+       $("#cost_beneficiary,#tt_no_beneficiary,#tt_no_sca_beneficiary").attr('required',true);
+    }	
+    else {
+         $("#cost_beneficiary,#tt_no_beneficiary,#tt_no_sca_beneficiary").attr('required',false).val("");
+    var ina = $("#st").val();
+    var inaa =	 $("#tt").val();
+    $("#tt,#st").val("0");
+    var gstt = $("#gst").val();
+    var gttt = $("#gtt").val();
+    var fing= parseInt(gstt)- parseInt(ina);
+    var fingt = parseInt(gttt)- parseInt(inaa);
+    $("#gst").val(fing);
+    $("#gtt").val(fingt);
+    }
+    });	
+    $("#a2").change(function(){
+    if($("#a2").prop('checked') == true){
+       $("#cost_beneficiary_s,#tt_no_sca_beneficiary_s,#anticipated_expenditure_sca_s,#skill_type,#institute_name").attr('required',true);
+    }	
+    else {
+        $("#cost_beneficiary_s,#tt_no_sca_beneficiary_s,#anticipated_expenditure_sca_s,#skill_type,#institute_name").attr('required',false).val();
+        var ina = $("#sst").val();
+    var inaa =	 $("#stt").val();
+    $("#stt,#sst").val("0");
+    var gstt = $("#gst").val();
+    var gttt = $("#gtt").val();
+    var fing= parseInt(gstt)- parseInt(ina);
+    var fingt = parseInt(gttt)- parseInt(inaa);
+    $("#gst").val(fing);
+    $("#gtt").val(fingt);
+    }
+    });	
+  $("#subsidy_sca2scsp_amount_sa,#subsidy_other_amount_sa").blur(function(){	
+            var nb = parseInt($("#subsidy_sca2scsp_amount_sa").val());
+    var bc = parseInt($("#subsidy_sca2scsp_amount_sa").val())+ parseInt($("#subsidy_other_amount_sa").val());
+    if(isNaN(nb)){
+            nb =0;
+        }
+        if(isNaN(bc)){
+            bc =0;
+        }
+        $("#ssst").val(nb);
+        $("#sstt").val(bc);
+        var sum = 0;
+        var sum1 =0;
+        $('.m').each(function(){
+        sum += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    });
+    $('.n').each(function(){
+        sum1 += parseInt($(this).val());  // Or this.innerHTML, this.innerText
+    });
+    $('#gst').val(sum);
+    $('#gtt').val(sum1);
+        });	
+        
+   
+     
+    
+  
+  </script>
+  <style>
+    .hide{
+    display: none;
+    }
+    #aa1 h3,#aa2 h3, #aa3 h3,  #aa4 h3,  #aa5 h3{color:#418bca}
+    .mul-select,.mul-selectv{
+    height: 34px;
+    }
+    .declartion{border: 1px solid#bbb;
+    /* padding: 10px; */
+    box-shadow: 0px 0px 6px #bbb;}
+    .declartion h3{background: #418bca;
+    color: #fff !important;
+    font-size: 17px;
+    padding: 4px;}
+    .matterd{    padding: 4px;}
+    .matterd span{  font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 24px;
+    }
+  </style>
+  <script>$("body").on('change keyup keydown paste cut', 'textarea', function () {
+    $(this).height(0).height(this.scrollHeight);
+    }).find('textarea').change();
+  </script>
+  <script>
+    $(document).ready(function(){
+    
+        $(".mul-select").select2({
+                placeholder: "-- Search District--", //placeholder
+                tags: false,
+                tokenSeparators: ['/',',',';'," "]
+            });
+             $(".mul-selectv").select2({
+                placeholder: "-- Search Villages--", //placeholder
+                tags: true,
+                tokenSeparators: ['/',',',';'," "]
+            });
+                $(".mul-selectv1").select2({
+                placeholder: "-- Search Town--", //placeholder
+                tags: false,
+                tokenSeparators: ['/',',',';'," "]
+            });
+            
+              $("body").on("keyup", "input.numberGreaterZero", function() {
+                  var numbergreaterzero=$(this).val(); 
+                  if(numbergreaterzero == 0){  //alert(numbergreaterzero);
+                      $('.numberGreaterZero').val('').focus();
+                      alertMsg=[]; 
+                      alertMsg.push('Please enter expected beneficiaries more than 0');
+                      if(alertMsg.length>0) {
+                          $("#alertModal .modal-data").html("");
+                          $("#alertModal .modal-data").html('<ol style="padding-inline-start: 1rem;"></ol>');
+                          jQuery.each(alertMsg, function(i, val) {
+                               $("#alertModal .modal-data ol").append('<li>'+val+'</li>');
+                          });
+                          $("#alertModal").modal();
+                      }
+                      
+                  }  
+              });
+    
+            // $("input.numToWord").on('keyup', function(){
+            $("body").on("keyup", "input.numToWord", function() {
+                var words=numberToWords($(this).val());
+                if(words!=""){
+                            words='Rupees: '+words;
+                        }
+                      $(this).siblings('span').text(words).css({'color':'green','font-weight':'700','text-transform':'capitalize','font-size':'90%'});
+                    });
+    
+    $(window).on('load', function() {
+                $("input.numToWord").each(function(){
+                    $(this).attr('maxlength',9);
+                    var words=numberToWords($(this).val());
+                    if(words!=""){
+                        words='Rupees: '+words;
+                    }
+          $(this).siblings('span').text(words).css({'color':'green','font-weight':'700','text-transform':'capitalize','font-size':'90%'});
+       });     
+    });
+    
+    $('.select3').select2();
+    
+    $('.select2').one('select2:open', function(e) {
+    $('input.select2-search__field').prop('placeholder', ' Search...');
+    });
+  
+      $(".radio-parent .form-check-inline .form-check-input").click(function(){
+        var identify_agency=$(this).val();
+        if (identify_agency=="1") {
+          $(this).parents(".radio-parent").children(".parent-sibling").show();
+        } else {
+          $(this).parents(".radio-parent").children(".parent-sibling").hide();
+        }
+      });
+  
+      }); 
+  </script>
+  <script>
+  
+  
+  
+  
+  
+  
+  
+  /*-------------------Create Clone -------------------------*/
+  
+  $( "body" ).on( "click",'#btnClone', function() {	
+      
+       var validator = $('#commentFormm').data('bootstrapValidator');
+       $count=$(".clonedInput").length;
+      if($count<3)
+      {
+      
+     // $('#InputVDP ').append($('#InputVDP  tr:last').clone());
+      
+      $('#InputVDP tbody').append('<tr class="clonedInput">  <td> <div class="form-group"><input type="text" class="textlimt form-control " onkeypress="JavaScript:return AlphabetsOnly(event)" name="subsidy_other_name_i[]" placeholder="Details" data-skip-name="true"></div><span></span></td><td><div class="form-group"><input type="number" class="fo form-control numToWord" name="subsidy_other_amount_i[]" placeholder="Amount" onkeypress="JavaScript:return isNumber(event)" data-skip-name="true" maxlength="9"><span></span><div class="infra_Error"></div></div></td>  </tr>');
+         
+        $(".textlimt,.fo").each(function() {
+           validator.addField($(this));
+          });
+  
+       
+      
+      }
+      
+  });
+  
+  /*-------------------Delete Clone -------------------------*/
+  
+  
+  $( "body" ).on( "click",'#btnCloneR', function() {
+      $count=$(".clonedInput").length;
+      if($count>1)
+      {
+          $('#InputVDP  tr:last').remove();
+      }
+      
+  }); 
+  
+  
+   $("#subsidy_sca2scsp_amount_i").blur(function(){	
+   var x=parseInt($('#subsidy_sca2scsp_amount_i').val());
+      var z=parseInt($('#total_subsidy_amount_i').val());
+      $("#alertModal .modal-data").html("");
+      $("#alertModal .modal-data").html('<ol style="padding-inline-start: 1rem;"></ol>');
+      
+       if(isNaN(z)){
+       $("#alertModal .modal-data ol").append('<li>Total cost of construction </li>');
+           $("#alertModal").modal();
+            $('#total_subsidy_amount_i').addClass('border-danger');
+          }else{
+            $('#total_subsidy_amount_i').removeClass('border-danger');
+          }
+     if(isNaN(x)){
+          $("#alertModal .modal-data ol").append('<li>Funds proposed under Grant-in-aid required </li>');
+           $("#alertModal").modal();
+            $('#subsidy_sca2scsp_amount_i').addClass('border-danger');
+          }else{
+            $('#subsidy_sca2scsp_amount_i').removeClass('border-danger');
+          }
+      
+      
+      
+   if(z!=''){
+   
+       var sum=0;
+       $('.fo').each(function(){
+          
+          if($(this).val()){
+            sum += parseInt($(this).val());  
+          }else{
+               sum += 0; 
+          }
+        });
+        var total=sum+x;
+        if(total!=z){
+          $("#alertModal .modal-data ol").append('<li>Infrastructure Development :: Cost of construction is not equal to total of Funds proposed from others and Grants-in-Aid.</li>');
+          
+          $("#alertModal").modal();
+        }
+   }
+       
+   
+   
+   }); 
+   
+   
+   
+   
+   
+   $( "body" ).on( "keyup",'.fo', function() {
+  
+      var x=parseInt($(this).val());
+      var z=parseInt($('#total_subsidy_amount_i').val());
+       $('#asd').prop('disabled', false);
+      if(z!=''){
+          $(this).siblings('.infra_Error').text('');
+       if(x>=z){
+            $(this).addClass('border-danger');
+          $(this).siblings('.infra_Error').text('Amount can not be equal or greater than '+z+'').css({'color':'red','font-size':'90%'});
+           $('#asd').prop('disabled', true);
+          }else{
+              $(this).siblings('.infra_Error').text('');
+            $(this).removeClass('border-danger');
+          }
+          
+      }
+   
+   }); 
+   
+   $( "body" ).on( "keyup",'#subsidy_sca2scsp_amount_i', function() {
+  
+      var x=parseInt($(this).val());
+      var z=parseInt($('#total_subsidy_amount_i').val());
+       $('#asd').prop('disabled', false);
+      if(z!=''){
+          $(this).siblings('.infra_Error').text('');
+       if(x>z){
+            $(this).addClass('border-danger');
+          $(this).siblings('.infra_Error').text('Amount can not be greater than '+z+'').css({'color':'red','font-size':'90%'});
+           $('#asd').prop('disabled', true);
+          }else{
+              $(this).siblings('.infra_Error').text('');
+            $(this).removeClass('border-danger');
+          }
+          
+      }
+   
+   }); 
+   
+   
+   
+   
+   $( "body" ).on( "keyup",'#loan_bank_amount,#own_amount,#subsidy_other_amount,#loan_others_amount', function() {
+      var x=parseInt($('#cost_beneficiary').val());
+      var z=parseInt($(this).val());
+       $('#asd').prop('disabled', false);
+       
+       
+       
+      if(z!=''){
+           $(this).siblings('.income_Eror').text('');
+       if(z>=x){
+            $(this).addClass('border-danger');
+            $(this).siblings('.income_Eror').text('Amount can not be equal or greater than '+x+'').css({'color':'red','font-size':'90%'});
+            $('#asd').prop('disabled', true);
+            
+          }else{
+               $(this).siblings('.income_Eror').text('');
+            $(this).removeClass('border-danger');
+          }
+          
+      }
+   
+   }); 
+   
+  
+       function AlphabetsOnly(e){
+          var regex = new RegExp(/^[a-zA-Z\s]+$/);
+          var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+          if (regex.test(str)) {
+              
+              
+              return true;
+          }
+          else {
+              e.preventDefault();
+              return false;
+          }
+      }
+      
+      $( "body" ).on( "keyup",'.zeronotvalid', function() {
+        if($(this).val().match(/^0/)){
+            $(this).val('');
+            return false;
+        }
+  });
+  
+  
+  
+  $( "body" ).on( "change",'#exp_sdate,#exp_edate', function() {
+      
+      var start_date = $("#exp_sdate").val();
+      var end_date = $("#exp_edate").val();
+      var date=start_date;
+      
+      var new_start = date.split("-").reverse().join("-");
+      if(end_date!='' ){
+          var enddate=end_date;
+          var new_end = enddate.split("-").reverse().join("-");
+  
+          var start = moment(new_start);
+          var end = moment(new_end);
+          var days=end.diff(start, "days");
+          
+              sum=days+1;
+          $("#exp_dday").val(sum);
+          
+          
+      }else{
+          
+          $("#exp_edate").val('');
+      }
+      
+          
+  });
+  
+  
+  
+  
+  
+  
+  
+      
+  $(function(){
+           $('#commentFormm').bind('submit',function(e) {
+    e.preventDefault();
+          });
+  });
+      
+  </script>
+  
+  
+  
+          <!-- end page level js -->
+  <script type="text/javascript">  
+      // function numberToWords(number) {  
+      //     var digit = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];  
+      //     var elevenSeries = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];  
+      //     var countingByTens = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];  
+      //     var shortScale = ['', 'thousand', 'million', 'billion', 'trillion'];  
+    
+      //     number = number.toString(); number = number.replace(/[\, ]/g, ''); if (number == 0) return ''; if (number != parseFloat(number)) return 'not a number'; var x = number.indexOf('.'); if (x == -1) x = number.length; if (x > 15) return 'too big'; var n = number.split(''); var str = ''; var sk = 0; for (var i = 0; i < x; i++) { if ((x - i) % 3 == 2) { if (n[i] == '1') { str += elevenSeries[Number(n[i + 1])] + ' '; i++; sk = 1; } else if (n[i] != 0) { str += countingByTens[n[i] - 2] + ' '; sk = 1; } } else if (n[i] != 0) { str += digit[n[i]] + ' '; if ((x - i) % 3 == 0) str += 'hundred '; sk = 1; } if ((x - i) % 3 == 1) { if (sk) str += shortScale[(x - i - 1) / 3] + ' '; sk = 0; } } if (x != number.length) { var y = number.length; str += 'point '; for (var i = x + 1; i < y; i++) str += digit[n[i]] + ' '; } str = str.replace(/\number+/g, ' '); return str.trim() + ".";  
+    
+      // }
+  function numberToWords(amount) {
+       var words = new Array();
+       words[0] = '';
+       words[1] = 'One';
+       words[2] = 'Two';
+       words[3] = 'Three';
+       words[4] = 'Four';
+       words[5] = 'Five';
+       words[6] = 'Six';
+       words[7] = 'Seven';
+       words[8] = 'Eight';
+       words[9] = 'Nine';
+       words[10] = 'Ten';
+       words[11] = 'Eleven';
+       words[12] = 'Twelve';
+       words[13] = 'Thirteen';
+       words[14] = 'Fourteen';
+       words[15] = 'Fifteen';
+       words[16] = 'Sixteen';
+       words[17] = 'Seventeen';
+       words[18] = 'Eighteen';
+       words[19] = 'Nineteen';
+       words[20] = 'Twenty';
+       words[30] = 'Thirty';
+       words[40] = 'Forty';
+       words[50] = 'Fifty';
+       words[60] = 'Sixty';
+       words[70] = 'Seventy';
+       words[80] = 'Eighty';
+       words[90] = 'Ninety';
+       amount = amount.toString();
+       var atemp = amount.split(".");
+       var number = atemp[0].split(",").join("");
+       var n_length = number.length;
+       var words_string = "";
+       if (n_length <= 9) {
+           var n_array = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0);
+           var received_n_array = new Array();
+           for (var i = 0; i < n_length; i++) {
+               received_n_array[i] = number.substr(i, 1);
+           }
+           for (var i = 9 - n_length, j = 0; i < 9; i++, j++) {
+               n_array[i] = received_n_array[j];
+           }
+           for (var i = 0, j = 1; i < 9; i++, j++) {
+               if (i == 0 || i == 2 || i == 4 || i == 7) {
+                   if (n_array[i] == 1) {
+                       n_array[j] = 10 + parseInt(n_array[j]);
+                       n_array[i] = 0;
+                   }
+               }
+           }
+           value = "";
+           for (var i = 0; i < 9; i++) {
+               if (i == 0 || i == 2 || i == 4 || i == 7) {
+                   value = n_array[i] * 10;
+               } else {
+                   value = n_array[i];
+               }
+               if (value != 0) {
+                   words_string += words[value] + " ";
+               }
+               if ((i == 1 && value != 0) || (i == 0 && value != 0 && n_array[i + 1] == 0)) {
+                   words_string += "Crores ";
+               }
+               if ((i == 3 && value != 0) || (i == 2 && value != 0 && n_array[i + 1] == 0)) {
+                   words_string += "Lakhs ";
+               }
+               if ((i == 5 && value != 0) || (i == 4 && value != 0 && n_array[i + 1] == 0)) {
+                   words_string += "Thousand ";
+               }
+               if (i == 6 && value != 0 && (n_array[i + 1] != 0 && n_array[i + 2] != 0)) {
+                   words_string += "Hundred and ";
+               } else if (i == 6 && value != 0) {
+                   words_string += "Hundred ";
+               }
+           }
+           words_string = words_string.split("  ").join(" ");
+       }
+       return "".concat(words_string);
+    }
+  </script>
+  </body>
+  </html>
+  

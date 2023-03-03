@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="theme-color" content="#ff5f1f">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="yandex-verification" content="1dfc0cfd57616a61" />
+      <meta name="description" content="Home Pradhan Mantri Anusuchit Jaati Abhyuday Yojna">
+      <meta name="keywords" content="Home, PM-AJAY, PMAJAY">
+      <link rel="apple-touch-icon" href="images/logo.png">
+      <link rel="icon" href="images/logo.png">
+      <title>Home | Pradhan Mantri Anusuchit Jaati Abhyuday Yojna (PM-AJAY)</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar sticky-top bg-white py-1 shadow-sm">
+         <div class="container-fluid">
+            <div class="d-flex align-items-center">
+               <a class="navbar-brand me-2" href="#">
+               <img src="images/logo.png" width="40" /> <b class="fs-5 ms-1 fw-bold color-orange">PMAJAY</b>
+               </a>
+               <span class="material-symbols-outlined fs-2 ms-5 pointer nav-btn color-orange pointer nav-btn">menu</span>
+            </div>
+            <div class="d-inline-block">
+               <div class="d-block">
+                  <div class="float-start">
+                     <div class="d-none d-sm-flex align-items-center py-2 fs-7 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1 opacity-75">nest_clock_farsight_analog</span><span>Last Login : 10-05-2022   2:13 pm</span>
+                     </div>
+                  </div>
+                  <div class="btn-group float-start me-2" role="group" aria-label="Button group with nested dropdown">
+                     <div class="btn-group" role="group" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Font size increase decrease">
+                        <button id="btnGroupDrop2" type="button" class="form-select rounded bg-transparent" data-bs-toggle="dropdown" aria-expanded="false" onclick="this.blur();">
+                        T<span class="fs-7">T</span>
+                        </button>
+                        <ul class="dropdown-menu border-0 bg-transparent" aria-labelledby="btnGroupDrop2">
+                           <li class="d-inline-block"><a href="#" class="rounded-circle bg-light border p-0 d-flex justify-content-center align-items-center font-sizer" id="plusBtn" onclick="plus()">A+</a></li>
+                           <li class="d-inline-block"><a href="#" class="rounded-circle bg-light border p-0 d-flex justify-content-center align-items-center font-sizer" id="defaultBtn">A</a></li>
+                           <li class="d-inline-block"><a href="#" class="rounded-circle bg-light border p-0 d-flex justify-content-center align-items-center font-sizer" id="minusBtn" onclick="minus()">A-</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="form-check form-switch float-start p-0">
+                     <a href="#" class="btn border rounded pillbg-white shadow-none">हिन्दी</a>
+                  </div>
+                  <div class="dropdown float-end border-0">
+                     <button class="bg-transparent form-select shadow-none border-0" type="button" id="btnGroupDrop3" data-bs-toggle="dropdown" aria-expanded="false">
+                     User Name
+                     </button>
+                     <ul class="dropdown-menu start-auto end-0 border mt-2 user-dropdown" aria-labelledby="btnGroupDrop3">
+                        <li class="d-sm-none d-flex align-items-center mb-1 ps-2 fs-7"><span class="material-symbols-outlined fs-6 me-1 py-0 align-middle lh-sm">nest_clock_farsight_analog</span><span>10-05-2022 2:13 pm</span></li>
+                        <li class="text-orange fs-7 d-flex align-items-center ps-2"><span class="material-symbols-outlined fs-6 float-start me-2">work</span> Software Developer</li>
+                        <li><a class="dropdown-item d-flex align-items-center fs-7 ps-2 text-success" href="#"><span class="material-symbols-outlined fs-5 opacity-75 mt-n1 float-start me-2"> manage_accounts</span> Account Setting</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center fs-7 ps-2 text-danger" href="#"><span class="material-symbols-outlined fs-5 opacity-75 mt-n1 float-start me-2">logout</span> Logout</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div class="container-fluid p-0">
+         <div class="d-flex flex-row">
+            <div class="bg-yellow d-inline-block py-2 p-0 leftnav-wrap col-sm-4 col-md-4 col-lg-3 col-xl-2">
+               <div class="accordion" id="accordionExample">
+                  <ul class="py-2 p-0 m-0">
+                     <li>
+                        <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav active"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">dashboard</span><span class="leftnav-con me-3">Dashboard</span></a>
+                     </li>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1 fs-4 me-3">calendar_view_month</span><span class="leftnav-con me-3">Manage Module</span></button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> List Modual</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Modual Sorting</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Deleted Users</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Dashboard</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Users</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Creat Modual</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <li>
+                        <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">content_copy</span><span class="leftnav-con me-3">Content</span></a>
+                     </li>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">diversity_3</span><span class="leftnav-con me-3">Groups</span></button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add New Group</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Groups</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingFour">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">apartment</span><span class="leftnav-con me-3">Institute</span></button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Institute</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingFive">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">group</span><span class="leftnav-con me-3">Users</span></button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Users</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <li class="position-relative">
+                        <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">cloud_upload</span><span class="leftnav-con me-3">Upload Video/Image</span></a>
+                     </li>
+                     <li class="position-relative">
+                        <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">dns</span><span class="leftnav-con me-3">Domain</span></a>
+                     </li>
+                     <li>
+                        <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">dns</span><span class="leftnav-con me-3">Sub Domain/Videos</span></a>
+                     </li>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingSix">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">file_upload</span><span class="leftnav-con me-3">Sanction Upload</span></button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add Section</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Section</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingSeven">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">support_agent</span><span class="leftnav-con me-3">PAC Meeting</span></button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add Pac</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Pac</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingEight">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">menu_book</span><span class="leftnav-con me-3">Course</span></button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add Course</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Course</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingNine">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">list_alt</span><span class="leftnav-con me-3">Circulars/MOs/Orders</span></button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add Circulars/OMs/Orders</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Circulars/OMs/Orders</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingTen">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">pie_chart</span><span class="leftnav-con me-3">Report</span></button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Search By Project Id</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Project Summary</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> User Repoert</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Project Status</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#" target="_blank"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> State Project Summary</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingEleven">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">library_books</span><span class="leftnav-con me-3">User Manual</span></button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> District User</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> State User</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="accordion-item bg-transparent p-0 border-0">
+                        <h2 class="accordion-header" id="headingTwelve">
+                           <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">mail</span><span class="leftnav-con me-3">Send Mail</span></button>
+                        </h2>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                           <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Mail</a></li>
+                              <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Mail Log</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <li>
+                        <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">language</span><span class="leftnav-con me-3">PMAGY</span></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="bg-light p-4 pb-0 right-sec flex-grow-1 col-sm-8 col-md-8 col-lg-9 col-xl-10">
+               <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                     <div class="bg-white rounded p-2 shadow-md" id="chart1"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                     <div class="bg-white rounded p-2 shadow-md" id="chart2"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                     <div class="col-12 mb-4">
+                        <div class="shadow-md rounded bg-white py-3 sec-lightblue">
+                           <div class="d-flex align-items-center justify-content-between px-3">
+                              <div class="">
+                                 <h6 class="fw-bold">State Projects</h6>
+                                 <h3 class="fw-bold m-0">241</h3>
+                              </div>
+                              <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                                 <span class="material-symbols-outlined fs-1 m-0">
+                                 wb_incandescent
+                                 </span>
+                              </div>
+                           </div>
+                           <hr class="opacity-1">
+                           <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                              <div class="">
+                                 View Report
+                              </div>
+                              <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                                 <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                                 arrow_forward_ios
+                                 </span>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-12 mb-4">
+                        <div class="shadow-md rounded bg-white py-3 sec-black">
+                           <div class="d-flex align-items-center justify-content-between px-3">
+                              <div class="">
+                                 <h6 class="fw-bold">District Projects</h6>
+                                 <h3 class="fw-bold m-0">3444</h3>
+                              </div>
+                              <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                                 <span class="material-symbols-outlined fs-1 m-0">
+                                 psychology
+                                 </span>
+                              </div>
+                           </div>
+                           <hr class="opacity-1">
+                           <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                              <div class="">
+                                 View Report
+                              </div>
+                              <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                                 <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                                 arrow_forward_ios
+                                 </span>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 mb-3">
+                     <form class="d-flex justify-content-end">
+                        <select class="form-select w-auto border border-dark select-dark text-dark me-3">
+                           <option>Select Financial Year</option>
+                           <option value="2022-2023">2022-2023</option>
+                           <option value="2021-2022">2021-2022</option>
+                           <option value="2020-2021">2020-2021</option>
+                           <option value="2019-2020">2019-2020</option>
+                        </select>
+                        <select class="form-select w-auto border border-dark select-dark text-dark" style="max-width: 210px;">
+                           <option>Type of Intervention</option>
+                           <option value="">All </option>
+                           <option value="">Income Generation Activity</option>
+                           <option value="">Infrastructure Development</option>
+                           <option value="">Monitoring, Evaluation and Supervision</option>
+                           <option value="">Skill Development</option>
+                           <option value="">Support to State Scheduled Caste Corporation</option>
+                        </select>
+                     </form>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-purple">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Draft Projects !</h6>
+                              <h3 class="fw-bold m-0">0</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-2 m-0">
+                              save_as
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-yellow">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Pending Projects</h6>
+                              <h3 class="fw-bold m-0">24</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-2 m-0">
+                              snooze
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-skyblue">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Forwarded Projects</h6>
+                              <h3 class="fw-bold m-0">83</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-1 m-0">
+                              swap_horizontal_circle
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-red">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Rejected Projects</h6>
+                              <h3 class="fw-bold m-0">0</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-1 m-0">
+                              block
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-lightblue">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Revised Projects</h6>
+                              <h3 class="fw-bold m-0">62</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-1 m-0">
+                              history
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-black">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Project as Part of AAP</h6>
+                              <h3 class="fw-bold m-0">0</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-2 m-0">
+                              engineering
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-green">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Approved Amount</h6>
+                              <h3 class="fw-bold m-0">0</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-2 m-0">
+                              currency_rupee
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-orange">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Beneficiaries</h6>
+                              <h3 class="fw-bold m-0">0</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-2 m-0">
+                              real_estate_agent
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
+                     <div class="shadow-md rounded bg-white py-3 sec-green">
+                        <div class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              <h6 class="fw-bold">No. of Approved Implementing Agencies</h6>
+                              <h3 class="fw-bold m-0">0</h3>
+                           </div>
+                           <div class="bg-white rounded-pill d-flex align-items-center justify-content-center section-icons">
+                              <span class="material-symbols-outlined fs-2 m-0">
+                              verified
+                              </span>
+                           </div>
+                        </div>
+                        <hr class="opacity-1">
+                        <a href="#" class="d-flex align-items-center justify-content-between px-3">
+                           <div class="">
+                              View Report
+                           </div>
+                           <div class="bg-green me-2 rounded-pill position-relative link-arrow">
+                              <span class="material-symbols-outlined fs-6 text-white position-absolute top-50 start-50 translate-middle">
+                              arrow_forward_ios
+                              </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/apexcharts.js"></script>
+      <script src="js/chart.js"></script>
+      <script src="js/cutomized.js"></script>
+   </body>
+</html>

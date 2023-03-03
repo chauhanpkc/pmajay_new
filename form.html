@@ -1,0 +1,2082 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="theme-color" content="#ff5f1f">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="yandex-verification" content="1dfc0cfd57616a61" />
+   <meta name="description" content="Home Pradhan Mantri Anusuchit Jaati Abhyuday Yojna">
+   <meta name="keywords" content="Home, PM-AJAY, PMAJAY">
+   <link rel="apple-touch-icon" href="images/logo.png">
+   <link rel="icon" href="images/logo.png">
+   <title>Home | Pradhan Mantri Anusuchit Jaati Abhyuday Yojna (PM-AJAY)</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/datepicker.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body style="font-family: Lato, sans-serif !important;">
+   
+      <nav class="navbar sticky-top bg-white py-1 shadow-sm">
+         <div class="container-fluid">
+            <div class="d-flex align-items-center">
+               <a class="navbar-brand me-2" href="#">
+                  <img src="images/logo.png" width="40" /> <b class="fs-5 ms-1 fw-bold color-orange">PMAJAY</b>
+               </a>
+               <span class="material-symbols-outlined fs-2 ms-5 pointer nav-btn color-orange pointer nav-btn">menu</span>
+            </div>
+            <div class="d-inline-block">
+               <div class="d-block">
+                  <div class="float-start">
+                     <div class="d-none d-sm-flex align-items-center py-2 fs-7 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1 opacity-75">nest_clock_farsight_analog</span><span>Last Login
+                           : 10-05-2022 2:13 pm</span>
+                     </div>
+                  </div>
+                  <div class="btn-group float-start me-2" role="group" aria-label="Button group with nested dropdown">
+                     <div class="btn-group" role="group" data-bs-toggle="tooltip" data-bs-placement="left" title=""
+                        data-bs-original-title="Font size increase decrease">
+                        <button id="btnGroupDrop2" type="button" class="form-select rounded bg-transparent"
+                           data-bs-toggle="dropdown" aria-expanded="false" onclick="this.blur();">
+                           T<span class="fs-7">T</span>
+                        </button>
+                        <ul class="dropdown-menu border-0 bg-transparent" aria-labelledby="btnGroupDrop2">
+                           <li class="d-inline-block"><a href="#"
+                                 class="rounded-circle bg-light border p-0 d-flex justify-content-center align-items-center font-sizer"
+                                 id="plusBtn" onclick="plus()">A+</a></li>
+                           <li class="d-inline-block"><a href="#"
+                                 class="rounded-circle bg-light border p-0 d-flex justify-content-center align-items-center font-sizer"
+                                 id="defaultBtn">A</a></li>
+                           <li class="d-inline-block"><a href="#"
+                                 class="rounded-circle bg-light border p-0 d-flex justify-content-center align-items-center font-sizer"
+                                 id="minusBtn" onclick="minus()">A-</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="form-check form-switch float-start p-0">
+                     <a href="#" class="btn border rounded pillbg-white shadow-none">हिन्दी</a>
+                  </div>
+                  <div class="dropdown float-end border-0">
+                     <button class="bg-transparent form-select shadow-none border-0" type="button" id="btnGroupDrop3"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        User Name
+                     </button>
+                     <ul class="dropdown-menu start-auto end-0 border mt-2 user-dropdown" aria-labelledby="btnGroupDrop3">
+                        <li class="d-sm-none d-flex align-items-center mb-1 ps-2 fs-7"><span
+                              class="material-symbols-outlined fs-6 me-1 py-0 align-middle lh-sm">nest_clock_farsight_analog</span><span>10-05-2022
+                              2:13 pm</span></li>
+                        <li class="text-orange fs-7 d-flex align-items-center ps-2"><span
+                              class="material-symbols-outlined fs-6 float-start me-2">work</span> Software Developer</li>
+                        <li><a class="dropdown-item d-flex align-items-center fs-7 ps-2 text-success" href="#"><span
+                                 class="material-symbols-outlined fs-5 opacity-75 mt-n1 float-start me-2"> manage_accounts</span>
+                              Account Setting</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center fs-7 ps-2 text-danger fw-bolder" href="#"><span
+                                 class="material-symbols-outlined fs-5 opacity-75 mt-n1 float-start me-2">logout</span> Logout</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div class="container-fluid p-0">
+         <div class="d-flex flex-row">
+               <div class="d-inline-block py-2 p-0 leftnav-wrap col-sm-4 col-md-4 col-lg-3 col-xl-2">
+                  <div class="accordion" id="accordionExample">
+                     <ul class="py-2 p-0 m-0">
+                        <li>
+                           <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav active"><span
+                                 class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">dashboard</span><span
+                                 class="leftnav-con me-3">Dashboard</span></a>
+                        </li>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 <span class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1 fs-4 me-3">calendar_view_month</span>
+                                 <span class="leftnav-con me-3">Manage Module</span>
+                              </button>
+                           </h2>
+                           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> List Modual</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Modual Sorting</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Deleted Users</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Dashboard</a></li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Users</a></li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined fs-7 float-start lh-sm me-1">circle</span> Creat Modual</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <li>
+                           <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span
+                                 class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">content_copy</span><span
+                                 class="leftnav-con me-3">Content</span></a>
+                        </li>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingThree">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                 aria-controls="collapseThree"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">diversity_3</span><span
+                                    class="leftnav-con me-3">Groups</span></button>
+                           </h2>
+                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add New Group</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Groups</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingFour">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                 aria-controls="collapseThree"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">apartment</span><span
+                                    class="leftnav-con me-3">Institute</span></button>
+                           </h2>
+                           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Institute</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingFive">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                 aria-controls="collapseThree"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">group</span><span
+                                    class="leftnav-con me-3">Users</span></button>
+                           </h2>
+                           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Users</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <li class="position-relative">
+                           <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span
+                                 class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">cloud_upload</span><span
+                                 class="leftnav-con me-3">Upload Video/Image</span></a>
+                        </li>
+                        <li class="position-relative">
+                           <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span
+                                 class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">dns</span><span
+                                 class="leftnav-con me-3">Domain</span></a>
+                        </li>
+                        <li>
+                           <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span
+                                 class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">dns</span><span
+                                 class="leftnav-con me-3">Sub Domain/Videos</span></a>
+                        </li>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingSix">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                 aria-controls="collapseSix"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">file_upload</span><span
+                                    class="leftnav-con me-3">Sanction Upload</span></button>
+                           </h2>
+                           <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add Section</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Section</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingSeven">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                                 aria-controls="collapseSeven"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">support_agent</span><span
+                                    class="leftnav-con me-3">PAC Meeting</span></button>
+                           </h2>
+                           <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add Pac</a></li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Pac</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingEight">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                                 aria-controls="collapseEight"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">menu_book</span><span
+                                    class="leftnav-con me-3">Course</span></button>
+                           </h2>
+                           <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add Course</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List Course</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingNine">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                                 aria-controls="collapseNine"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">list_alt</span><span
+                                    class="leftnav-con me-3">Circulars/MOs/Orders</span></button>
+                           </h2>
+                           <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Add
+                                       Circulars/OMs/Orders</a></li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> List
+                                       Circulars/OMs/Orders</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingTen">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
+                                 aria-controls="collapseTen"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">pie_chart</span><span
+                                    class="leftnav-con me-3">Report</span></button>
+                           </h2>
+                           <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Search By Project
+                                       Id</a></li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Project
+                                       Summary</a></li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> User Repoert</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Project Status</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#" target="_blank"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> State Project
+                                       Summary</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingEleven">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+                                 aria-expanded="false" aria-controls="collapseEleven"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">library_books</span><span
+                                    class="leftnav-con me-3">User Manual</span></button>
+                           </h2>
+                           <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> District User</a>
+                                 </li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> State User</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="accordion-item bg-transparent p-0 border-0">
+                           <h2 class="accordion-header" id="headingTwelve">
+                              <button
+                                 class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0"
+                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve"
+                                 aria-expanded="false" aria-controls="collapseTwelve"><span
+                                    class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">mail</span><span
+                                    class="leftnav-con me-3">Send Mail</span></button>
+                           </h2>
+                           <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                              data-bs-parent="#accordionExample">
+                              <ul class="ps-0 bg-yellow rounded liststyle-none bg-white submenu">
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Mail</a></li>
+                                 <li><a class="dropdown-item d-flex align-items-center leftnav" href="#"><span
+                                          class="material-symbols-outlined  fs-7 float-start lh-sm me-1">circle</span> Mail Log</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <li>
+                           <a href="#" class="py-2 px-3 my-1 d-flex align-items-center text-dark leftnav"><span
+                                 class="material-symbols-outlined icon-shadow rounded text-white bg-orange p-1  fs-4 me-3">language</span><span
+                                 class="leftnav-con me-3">PMAGY</span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="bg-light p-2 pb-0 right-sec flex-grow-1 col-sm-8 col-md-8 col-lg-9 col-xl-10 project_creation_hide">
+               <div  class="container-fluid ">
+                  <div class="row">
+                     <div class="col-12">
+                        <button class="accordion-button py-2 px-3 my-1 d-flex  shadow-none  bg-orange text-white collapse rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHeading1" aria-expanded="true"
+                                 aria-controls="collapseHeading1"><span class="material-symbols-outlined"> person_add </span> 
+                                 <span class="ms-2">Project Creations</span></button>
+                        </div>
+                  <div class="" id="collapseHeading1">
+                     <!-- Collapse Page -->
+                     <div id="accordion">
+                        <form class="g-3 needs-validation" id="commentFormm">
+                           <div class="clearfix">
+                              <div class="my-3 d-flex align-items-center justify-content-center">
+                                 <div class="me-2">
+                                    <label for="project_creation" class="form-label fw-bolder fs-5 mb-0">Financial Year</label>
+                                    <span class="text-danger fw-bolder">*</span>
+                                 </div>
+                                 <input type="text" class="form-control w-25" placeholder="2022-2023" readonly>
+                              </div>
+                           <div id="">
+                              <div class="col-12 bg-white shadow-md rounded mb-3" >
+                                 <div class="accordion-item bg-transparent border-0">
+                                    <h2 class="accordion-header" id="headingproject">
+                                       <button class="accordion-button py-2 px-3 my-1 d-flex text-dark shadow-none bg-transparent rounded-0 w-auto" type="button">
+                                          <span class="me-3 text-orange fw-bold mt-1">
+                                             <h5>Project Information</h5>
+                                          </span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseMenu" class="accordion-collapse collapse show " aria-labelledby="headingproject" data-bs-parent="#accordion">
+                                       <div class="container-fluid ">
+                                          <div class="row">
+                                          <div class="col-md-12 rounded mb-3 form_view">
+                                             <label for="projectTitle" class="control-label fw-bolder fs-6">Title of the Project<span class="text-danger fw-bolder">*</span></label>
+                                             <div class="form-group mb-3 ">
+                                                <input type="text" id="project_title" name="project_title" placeholder="Title of the Project"
+                                                   class="form-control">
+                                                <!-- <div class="invalid-feedback">Please fill Title of the Project.</div> -->
+                                             </div>
+                                             <div class="col-md-12 rounded mb-3 form_view">
+                                                <label for="field" class="control-label fw-bolder fs-6">Description and objective of the Project including details of forward and backward linkages as required<span class="text-danger fw-bolder">*</span></label>
+                                                <div class="form-group mb-3 ">
+                                                   <textarea type="text" id="project_object" name="project_object"
+                                                      placeholder="Minimum 50 and maximum 1000 characters allowed"
+                                                      class="form-control min-max" minlength="50" maxlength="1000"></textarea>
+                                                   <span class="min-max-message text-danger"></span>
+                                                   <p class="m-0">
+                                                      <span class="GFG">1000</span>
+                                                      Characters Remaining
+                                                   </p>
+                                                   <!-- <div class="invalid-feedback">Please fill Description and objective</div> -->
+                                                </div>
+                                             </div>
+                                             <div class="col-md-12 rounded form_view">
+                                                <label for="field1" class="control-label fw-bolder fs-6">About the target to be achieved<span class="text-danger fw-bolder">*</span></label>
+                                                <div class="form-group ">
+                                                   <textarea type="text" id="project_target" name="project_target"
+                                                      placeholder="Minimum 50 and maximum 1000 characters allowed"
+                                                      class="form-control min-max-target" minlength="50" maxlength="1000"></textarea>
+                                                   <span class="min-max-target-message text-danger"></span>
+                                                   <p class="m-0">
+                                                      <span class="GFG1">1000</span>
+                                                      Characters Remaining
+                                                   </p>
+                                                   <!-- <div class="invalid-feedback">Please fill About the target</div> -->
+                                                </div>
+                                                <span class="float-end collapsed p-1">
+                                                   <button type="button" class="btn btn-success btn-sm" name="project_next" data-bs-toggle="collapse" data-bs-target="#collapseMenu1" aria-expanded="true" aria-controls="collapseMenu1">Next</button>
+                                                </span>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-12 bg-white shadow-md rounded mb-3" >
+                                    <div class="accordion-item bg-transparent p-0 border-0">
+                                       <h2 class="accordion-header" id="headingExpected">
+                                          <button class="accordion-button py-2 px-3 my-1 d-flex text-dark shadow-none bg-transparent rounded-0 w-auto" type="button">
+                                             <span class=" me-3 text-orange fw-bold mt-1">
+                                                <h5>Expected Timeline</h5>
+                                             </span>
+                                          </button>
+                                       </h2>
+                                       <div id="collapseMenu1" class="accordion-collapse collapse form_view" aria-labelledby="headingExpected" data-bs-parent="#accordion">
+                                          <div class="container-fluid">
+                                          <div class="row">
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder">Expected Start Date<span
+                                                      class="text-danger fw-bolder">*</span></label>
+                                                <div class="form-group mb-3">
+                                                   <input type="text" id="expected_start_date" name="expected_start_date" class="form-control datepicker"placeholder="Expected Start Date">
+                                                   <!-- <div class="invalid-feedback">Please fill Expected Start Date</div> -->
+                                                </div>
+                                             <!-- <span class=" mb-3 collapsed" data-bs-toggle="collapse" data-bs-target="" aria-expanded="true" aria-controls="">
+                                                <button type="submit" class="btn btn-success btn-sm">Save</button>
+                                             </span> -->
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="expectedDate" class="control-label fw-bolder">Expected End Date<span
+                                                      class="text-danger fw-bolder">*</span></label>
+                                                <div class="form-group mb-3">
+                                                   <input type="text" id="expected_end_date" name="expected_end_date" class="form-control datepicker" required placeholder="Expected End Date">
+                                                   <!-- <div class="invalid-feedback">Please fill Expected End Date</div> -->
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="expectedDuration" class="control-label fw-bolder">Expected Duration in Days<span
+                                                      class="text-danger fw-bolder">*</span></label>
+                                                <div class="form-group">
+                                                   <input type="number" id="expected_duration" class="form-control" readonly>
+                                                   <div class="invalid-feedback">Please fill Expected Duration in Days</div>
+                                                </div>
+                                             </div>
+                                             <div class="">
+                                                <span class="float-end mb-3 collapsed p-1">
+                                                   <button type="button" class="btn btn-success btn-sm" name="Expected_next" data-bs-toggle="collapse" data-bs-target="#collapseMenu2" aria-expanded="true" aria-controls="collapseMenu2">Next</button>
+                                                </span>
+                                                <span class="float-end mb-3 collapsed p-1" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="true" aria-controls="collapseMenu">
+                                                   <button type="button" class="btn btn-secondary btn-sm">Previous</button>
+                                                </span>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 bg-white shadow-md rounded mb-3" >
+                                    <div class="accordion-item bg-transparent p-0 border-0">
+                                       <h2 class="accordion-header" id="headingIntervention">
+                                          <button
+                                             class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav collapsed rounded-0 w-auto" type="button">
+                                             <span class=" me-3 text-orange fw-bold mt-1">
+                                                <h5>Type of Intervention / Project</h5>
+                                             </span>
+                                          </button>
+                                       </h2>
+                                       <div id="collapseMenu2" class="accordion-collapse collapse" aria-labelledby="headingIntervention" data-bs-parent="#accordion" >
+                                          <div class="container-fluid">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <div class="form-group mb-3">
+                                                      <div>
+                                                         <div class="">
+                                                            <div class="">
+
+                                                               <input name="development" type="checkbox" class=""  id="skill_chk_list" value="Skill Development">&nbsp;&nbsp; <span>Skill Development</span>&nbsp;&nbsp;
+                                                               <input name="development" type="checkbox" class="" id="infra_chk_list" value="Infrastructure Development">&nbsp;&nbsp;
+                                                               <span>Infrastructure Development </span>&nbsp;&nbsp;
+                                                               <input name="development" type="checkbox" class="" id="income_gen_chk_list" value="Income Generation Development">&nbsp;&nbsp;
+                                                               <span>Income Generation Activity</span>
+                                                            </div>
+                                                         </div>
+                                                         <span class="text-success fw-bolder">For Hybrid project select multiple type of intervention .</span>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mb-3 skill_chk" style="display: none;">
+                                                      <h5 class="fw-bolder">Skill Development</h5>
+                                                      <div class="col-md-12">
+                                                         <div class="row">
+                                                            <div class="col-md-4 mb-3">
+                                                               <div class="form-group">
+
+                                                                  <div class="radio-parent">
+                                                                     <label class="control-label fw-bolder fs-6">Is the executing agency identified ?</label>
+                                                                     <div class="d-block  p-2 lh-sm mb-2 form-control" id="skill_agency">
+                                                                        <div class="form-check-inline">
+                                                                           <label class="form-check-label pointer">
+                                                                              <input type="radio" class="form-check-input m-0" id="skill_agency_yes" name="identify_agency" value="Yes"> Yes
+                                                                           </label>
+                                                                        </div>
+                                                                        <div class="form-check-inline">
+                                                                           <label class="form-check-label pointer">
+                                                                              <input type="radio" class="form-check-input m-0" id="skill_agency_no" name="identify_agency" value="No"> No
+                                                                           </label>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class=" parent-sibling skill_agency has-validated"
+                                                                        style="display: none;">
+
+                                                                        <label class=""><small><strong class="fw-bolder">Executing
+                                                                                 Agency</strong></small><span
+                                                                              class="text-danger fw-bolder">*</span></label>
+                                                                        <div class="form-group">
+                                                                           <select name="exec_agency_skill" id="exec_agency_skill"
+                                                                              class="form-select skill_executing" data-bv-field="exec_agency_skill"
+                                                                              required>
+                                                                              <option value=""> --Select Executing Agency-- </option>
+                                                                              <option value="Testing age, 635 A-win shastri bhavan new delhi"> Testing age, 635 A-win shastri bhavan new delhi</option>
+                                                                              <option value="KKY agency, 635 A-win shastri bhavan new delhi"> KKY agency, 635 A-win shastri bhavan new delhi</option>
+                                                                              <option value="Please enter Name of the implementing, Please enter Name of the implementing"> Please enter Name of the implementing, Please enter Name of the implementing</option>
+                                                                              <option value="Mohammad Sajid, batla house no 2 noida road"> Mohammad Sajid, batla house no 2 noida road </option>
+                                                                              <option value="state kky, 635 A-win shastri bhavan new delhi"> state kky, 635 A-win shastri bhavan new delhi </option>
+                                                                              <option value="RN tech Agency"> RN tech Agency </option>
+                                                                              <option value="Zayn Technology">Zayn Technology </option>
+                                                                              <option value="India">India</option>
+                                                                           </select>
+                                                                           <!-- <div class="invalid-feedback">Please Select Executing Agency</div> -->
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="col-md-4 has-validated">
+                                                               <label for="userid" class="control-label fw-bolder fs-6">Type of Skill<span
+                                                                     class="text-danger fw-bolder">*</span></label>
+                                                               <div class="form-group" id="">
+                                                                  <select class="form-select" name="skill_type" id="skill_type_preview" required>
+                                                                     <option value="">---Select skill---</option>
+                                                                     <option value="Up-skilling Programmes">Up-skilling Programmes</option>
+                                                                     <option value="Short term Training Programmes">Short term Training Programmes</option>
+                                                                     <option value="Entreprenurship Development Programmes">Entreprenurship Development Programmes</option>
+                                                                     <option value="Long Term Training Programmes">Long Term Training Programmes</option>
+                                                                  </select>
+                                                                  <!-- <div class="invalid-feedback">Please Select Skill</div> -->
+                                                               </div>
+                                                            </div>
+                                                            <div class="col-md-4 has-validated">
+                                                               <div class="form-group">
+                                                                  <div class="">
+                                                                     <label for="userid" class="control-label fw-bolder fs-6">Institute Name
+                                                                        <span class="text-danger fw-bolder">*</span></label>
+                                                                     <div class="">
+                                                                        <select class="form-select" name="institute_name" id="institute_name_preview"
+                                                                           tabindex="-1" aria-hidden="true" required>
+                                                                           <option value="" data-select2-id="4">---Select Institute---
+                                                                           </option>
+                                                                           <option value="ABC Training centre">ABC Training centre</option>
+                                                                           <option value="Lucknow district School">Lucknow district School</option>
+                                                                           <option value="Skill Institute for testing purpose">Skill Institute for testing purpose</option>
+                                                                        </select>
+                                                                        <!-- <div class="invalid-feedback">Please Select Institute Name </div> -->
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="mt-2">
+                                                         <fieldset class="border border-dark p-2 form_view">
+                                                            <legend class="bg-orange text-white col-md-6 m-0 float-none px-2 fs-5 rounded">Break up of per beneficiary Cost</legend>
+                                                            <table class="table table-bordered container-fluid has-validated">
+                                                               <thead class="bg-light">
+                                                                  <tr>
+                                                                     <th>Cost per beneficiary (in Rs.) <span class="text-danger fw-bolder">*</span></th>
+                                                                     <th>No. of Beneficiaries proposed to be supported from Grant-in-aid <span class="text-danger fw-bolder">*</span></th>
+                                                                     <th>Anticipated expenditure under Grant-in-aid <span class="text-danger fw-bolder">*</span></th>
+                                                                  </tr>
+                                                               </thead>
+                                                               <tbody class="border-top-0">
+                                                                  <tr>
+                                                                     <td>
+                                                                        <div class="form-group"><input id="cost_per_ben" name="cost_per_ben" type="number"
+                                                                              placeholder="Unit Cost" class="form-control" required>
+                                                                        </div>
+                                                                        <!-- <div class="invalid-feedback">Please Fill Cost</div> -->
+                                                                     </td>
+
+                                                                     <td>
+                                                                        <div class="form-group"><input id="no_of_ben" name="no_of_ben" type="number"
+                                                                              placeholder="Number of Beneficiaries proposed to be supported from Grant-in-aid"
+                                                                              class="form-control" required>
+                                                                        </div>
+                                                                        <!-- <div class="invalid-feedback">Please Fill</div> -->
+                                                                     </td>
+                                                                     <td>
+                                                                        <div class="form-group"><input id="" name="" type="text"
+                                                                              readonly placeholder="Total Cost of the Project"
+                                                                              class="form-control">
+                                                                        </div>
+                                                                     </td>
+                                                                  </tr>
+                                                               </tbody>
+                                                            </table>
+                                                         </fieldset>
+                                                      </div>
+                                                      <div class="mt-2 has-validated">
+                                                         <fieldset class="border p-2 border-dark">
+                                                            <legend class="bg-orange text-white col-md-6 m-0 float-none px-2 fs-5 rounded">
+                                                               <small>Declaration</small>
+                                                            </legend>
+                                                            <div class="">
+                                                               <div class="form-group p-1">
+                                                                  <input type="checkbox" id="skill_declaration" class="skill_declaration_pre" name="skill_declaration" value="Tick Declaration" required>
+                                                                  <span>
+                                                                     <small> The state government undertakes to ensure compliance of National Skill Qualification Framework (NSQF) for the courses imparted & Common Norms issued by MSDE amended from time to time.</small>
+                                                                  </span><br/>
+                                                                  <!-- <div class="invalid-feedback">Please tick Declaration</div> -->
+                                                               </div>
+                                                            </div>
+                                                         </fieldset>
+                                                      </div>
+                                                      <div class="">
+                                                         <table class="table table-bordered mt-5 has-validated ">
+                                                            <tbody class="">
+                                                                  <tr>
+                                                                     <th width="30%">Total proposed cost from Grant-in-aid (in Rs.)</th>
+                                                                     
+                                                                        <td class="form-group form_view">
+                                                                           <input type="text" name="total_pro_cost_skill" id="total_pro_cost_skill" class="form-control"
+                                                                              placeholder="Total Proposed cost" required>
+                                                                           <!-- <div class="invalid-feedback">Please fill</div> -->
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                      <div>
+                                                         <fieldset class="border p-2 border-dark form_view">
+                                                            <legend class="bg-orange text-white col-md-6 m-0 float-none px-2 fs-5 rounded"><small>Physical and Financial Target</small>
+                                                            </legend>
+                                                            <div class="row">
+                                                               <div class="col-md-12">
+                                                                  <table id="" class="table table-bordered has-validated">
+                                                                        <thead class="bg-light">
+                                                                        <tr>
+                                                                           <th>Financial Year</th>
+                                                                           <th>Summary/Details of Physical Target <span class="text-danger fw-bolder">*</span>
+                                                                           </th>
+                                                                           <th>Financial Year wise break-up of Grants-in-Aid (in Rs.)<span class="text-danger fw-bolder">*</span>
+                                                                           </th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody class="border-top-0">
+                                                                        <tr>
+                                                                           <td>
+                                                                              <input type="text" name="" id="" class="form-control"
+                                                                                 readonly placeholder="2022-2023">
+                                                                           </td>
+                                                                           <td class="form-group">
+                                                                              <input type="text" name="details_of_phy_target_skill" id="details_of_phy_target_skill" class="form-control"
+                                                                                 placeholder="Details of Physical Target" required>
+                                                                              <!-- <div class="invalid-feedback">Please Fill Physical target </div> -->
+                                                                           </td>
+                                                                           <td class="form-group">
+                                                                              <input type="number" name="financial_year_skill" id="financial_year_skill" class="form-control"
+                                                                                 placeholder="Financial Year wise break-up" required>
+                                                                              <!-- <div class="invalid-feedback">Please Fill Financial Year </div> -->
+                                                                           </td>
+                                                                        </tr>
+                                                                     </tbody>
+                                                                  </table>
+                                                                  <p class="bg-secondary d-inline p-1 rounded text-white"><strong class="fw-bolder">Note:</strong>
+                                                                     <small>Total of financial year wise required funds should be equal to Total proposed cost from Grant-in-aid. Financial year wise funds requirement is mandatory.</small>
+                                                                  </p>
+                                                               </div>
+                                                            </div>
+                                                         </fieldset>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mb-3 infra_chk" style="display: none;">
+                                                      <h5 class="fw-bolder">Infrastructure Development</h5>
+                                                      <div class="row was-validated my-2">
+                                                         <div class="col-md-6">
+                                                            <input name="infra_dev" type="checkbox" class="" id="infra_devl_list"
+                                                               required>
+                                                            &nbsp;
+                                                            <span class="fw-bolder"><small>Is project location Identified
+                                                                  ?</small></span>
+                                                            <!-- <div class="invalid-feedback">Tick to proceed</div> -->
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-md-12 infra_devl mb-3" style="display: none;">
+                                                         <div
+                                                            class="form-group d-flex justify-content-between align-items-center col-lg-8">
+                                                            <label for="location_iden" class="control-lebel"> <span
+                                                                  class="text-success">Area
+                                                                  Type</span> <span class="text-danger fw-bolder">*</span></label>
+                                                            <label for="location_iden_rural">
+                                                               <input type="radio" name="loc_iden" id="rural_chk_list"
+                                                                  value="Rural">&nbsp;Rural
+                                                            </label>
+                                                            <label for="location_iden_urban">
+                                                               <input type="radio" name="loc_iden" id="urban_chk_list"
+                                                                  value="Urban">&nbsp;Urban
+                                                            </label>
+                                                         </div>
+                                                         <div class="row rural_chk mb-3 has-validated" style="display: none;">
+                                                            <div class="col-md-4">
+                                                               <label for="village"
+                                                                  class="control-label fw-bolder">Village</label><span
+                                                                  class="text-danger fw-bolder">*</span>
+                                                               <small class="text-danger fw-bolder">Select multiple village</small>
+
+                                                               <div class="form-group">
+                                                                  <select class="form-select village_value" id="village" required>
+                                                                     <option value="">---Search Village---</option>
+                                                                     <option value="Paliya Bujurga" name="village">149886/Paliya Bujurga</option>
+                                                                     <option value="Makanpu" name="village">149887/Makanpur</option>
+                                                                     <option value="Raugaon" name="village">149888/Raugaon</option>
+                                                                     <option value="Iliyaspur" name="village">149889/Iliyaspur</option>
+                                                                  </select>
+                                                                  <!-- <div class="invalid-feedback">Please Select Village</div> -->
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <!-- <div class="row rural_chk" style="display: none;"> -->
+                                                            <div class="col-md-12 mb-3 rural_chk" style="display: none;">
+                                                               <div class="">
+                                                                  <input type="checkbox" name="rural_chk_preview" class="" value="Aspirational Districts">&nbsp;
+                                                                  <span>Aspirational Districts</span>&nbsp;&nbsp;
+                                                                  <input type="checkbox" name="rural_chk_preview" class="" value="LWE Affected Areas">&nbsp;
+                                                                  <span>LWE Affected Areas </span>&nbsp;&nbsp;
+                                                                  <input type="checkbox" name="rural_chk_preview" class="" value="NER">&nbsp;
+                                                                  <span>NER</span>
+                                                                  &nbsp;&nbsp;
+                                                                  <input type="checkbox" name="rural_chk_preview" class="" value="Hills">&nbsp;
+                                                                  <span>Hills</span>
+                                                                  &nbsp;&nbsp;
+                                                                  <input type="checkbox" name="rural_chk_preview" class="" value="PMAGY Villages">&nbsp;
+                                                                  <span>PMAGY Villages</span>&nbsp;&nbsp;
+
+                                                                  <input type="checkbox" name="rural_chk_preview" class="" value="SC majority Villages">&nbsp;
+                                                                  <span>SC majority Villages</span>
+                                                               </div>
+                                                            </div>
+                                                         <!-- </div> -->
+                                                         <div class="col-md-4 urban_chk has-validated" style="display: none;">
+                                                            <div class="form-group">
+                                                               <label for="multiple_town" class="control-label fw-bolder">Select
+                                                                     multiple
+                                                                     Town</label><span class="text-danger fw-bolder">*</span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                               <div class="">
+                                                                  <div class="">
+                                                                     <select name="multiple_town" id="multiple_town" class="form-select town_value" required>
+                                                                        <option value="">--Select Multiple Town--</option>
+                                                                        <option value="Aligarh">Aligarh</option>
+                                                                     </select>
+                                                                     <!-- <div class="invalid-feedback">Please Select Town</div> -->
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row urban_rural" style="display: none;">
+                                                            <div class="col-md-4">
+                                                               <div class="form-group">
+                                                                  <div class="radio-parent">
+                                                                     <label class=" control-label fw-bolder fs-6">Is the executing agency identified ?</label>
+                                                                     <div class="d-block  p-2 lh-sm mb-2 form-control">
+                                                                        <div class="form-check-inline">
+                                                                           <label class="form-check-label pointer">
+                                                                              <input type="radio" class="form-check-input m-0"
+                                                                                 id="infra_agency_yes" name="identify_agency3"
+                                                                                 value="Yes">Yes
+                                                                           </label>
+                                                                        </div>
+                                                                        <div class="form-check-inline">
+                                                                           <label class="form-check-label pointer">
+                                                                              <input type="radio" class="form-check-input m-0"
+                                                                                 id="infra_agency_no" name="identify_agency3" value="No">No
+                                                                           </label>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class=" parent-sibling infra_agency has-validated"
+                                                                        style="display: none;">
+
+                                                                        <label class="fw-bolder">Executing
+                                                                                 Agency<span
+                                                                              class="text-danger fw-bolder">*</span></label>
+                                                                        <div class="form-group">
+                                                                           <select name="exec_agency_infra" id="exec_agency_infra"
+                                                                              class="form-select infra_executing_pre" data-bv-field="imp_agency_infra"
+                                                                              required>
+                                                                              <option value=""> --Select Executing Agency-- </option>
+                                                                              <option value="Testing age, 635 A-win shastri bhavan new delhi"> Testing age, 635 A-win shastri bhavan new delhi</option>
+                                                                              <option value="KKY agency, 635 A-win shastri bhavan new delhi"> KKY agency, 635 A-win shastri bhavan new delhi</option>
+                                                                              <option value="Please enter Name of the implementing, Please enter Name of the implementing"> Please enter Name of the implementing, Please enter Name of the implementing</option>
+                                                                              <option value="Mohammad Sajid, batla house no 2 noida road"> Mohammad Sajid, batla house no 2 noida road </option>
+                                                                              <option value="state kky, 635 A-win shastri bhavan new delhi"> state kky, 635 A-win shastri bhavan new delhi </option>
+                                                                              <option value="RN tech Agency"> RN tech Agency</option>
+                                                                              <option value="Zayn Technology"> Zayn Technology</option>
+                                                                              <option value="India"> India</option>
+                                                                           </select>
+                                                                           <!-- <div class="invalid-feedback">Please Select Executing Agency</div> -->
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="col-md-4 has-validated">
+                                                               <label for="userid" class=" control-label fw-bolder">Type of
+                                                                     Infrastrucure</label><span class="text-danger fw-bolder">*</span>
+                                                               <div class="form-group">
+                                                                  <div class="">
+
+
+                                                                     <div class="">
+                                                                        <select class="form-select " name="infra_type" id="infra_type_preview"
+                                                                           data-bv-field="infra_type" required="required">
+                                                                           <option value="">---Type of Infrastrucure---</option>
+                                                                           <option value="Agriculture Practices etc.">Agriculture Practices etc.</option>
+                                                                           <option value="Digitization">Digitization</option>
+                                                                           <option value="Drinking water and sanitation">Drinking water and sanitation</option>
+                                                                           <option value="Education">Education</option>
+                                                                           <option value="Electricity and Clean fuel">Electricity and Clean fuel</option>
+                                                                           <option value="Financial Inclusion">Financial Inclusion</option>
+                                                                           <option value="Livelihood and Skill Development">Livelihood and Skill Development</option>
+                                                                           <option value="Others">Others</option>
+                                                                           <option value="Rural Roads and housing">Rural Roads and housing</option>
+                                                                           <option value="Social Security">Social Security</option>
+                                                                        </select>
+                                                                        <!-- <div class="invalid-feedback">Please select Infrastructure</div> -->
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="col-md-4 has-validated form_view">
+                                                               <label for="userid" class=" control-label fw-bolder">Infrastructure Description</label><span class="text-danger fw-bolder">*</span>
+                                                               <div class="form-group">
+                                                                  <div class="">
+                                                                     <div class="">
+                                                                        <input id="infra_desc" name="infra_desc" type="text"
+                                                                           placeholder="Infrastructure Description"
+                                                                           class="form-control " value="" data-bv-field="infra_desc"
+                                                                           required>
+                                                                        <!-- <div class="invalid-feedback">Please Fill</div> -->
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="infra_devl has-validated" style="display: none;">
+                                                         <table class="table table-bordered w-100">
+                                                            <thead>
+                                                               <tr class="bg-light text-black">
+                                                                  <th>Total cost of construction<span class="text-danger">*</span></th>
+                                                                  <th>Funds proposed from Others<span class="text-danger">*</span></th>
+                                                                  <th>Funds proposed under Grant-in-aid<span class="text-danger fw-bolder">*</span></th>
+                                                               </tr>
+                                                            </thead>
+                                                            <tbody class="border-1">
+                                                               <tr>
+                                                                  <td>
+                                                                     <div class="form-group">
+                                                                        <input type="number" name="total_cost_amount"
+                                                                           id="total_cost_amount" placeholder="Amount"
+                                                                           class="form-control" required>
+                                                                        <!-- <div class="invalid-feedback">Please Enter Amount</div> -->
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div action="" id="commentFormm1">
+                                                                        <table class="table table-bordered" id="InputVDP">
+                                                                              <thead class="bg-light">
+                                                                              <tr>
+                                                                                 <th>Please Specify</th>
+                                                                                 <th>Amount in Rs</th>
+                                                                              </tr>
+                                                                              </thead>
+                                                                              <tbody class="border-top-0">
+                                                                              <tr class="control-group clonedInput" id="">
+                                                                                 <td class="">
+                                                                                    <div class="form-group">
+                                                                                       <input type="text" name="details" id="details"
+                                                                                          placeholder="Details" class="form-control"
+                                                                                          required>
+                                                                                       <!-- <div class="invalid-feedback">Please Fill Details</div> -->
+                                                                                    </div>
+                                                                                 </td>
+                                                                                 <td class="">
+                                                                                    <div class="form-group">
+                                                                                       <input type="number" name="details_amt" id="details_amt"
+                                                                                          placeholder="Amount" class="form-control"
+                                                                                          required>
+                                                                                       <div class="invalid-feedback">Please Enter
+                                                                                          Amount
+                                                                                       </div>
+                                                                                    </div>
+                                                                                 </td>
+                                                                              </tr>
+                                                                           </tbody>
+                                                                        </table>
+                                                                        <div class="float-end control-group">
+                                                                           <button type="button"
+                                                                              class="btn btn-success btn-sm add-more"
+                                                                              id="btnClone" style="font-size:1px;"><span class="material-symbols-outlined">
+                                                                                 add
+                                                                              </span></button>
+                                                                           <button type="button" class="btn btn-danger btn-sm"
+                                                                              id="btnCloneR" style="font-size:1px;"><span class="material-symbols-outlined">
+                                                                                 remove
+                                                                              </span></button>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div class="form-group">
+                                                                        <input type="text" name="funds_proposed"
+                                                                           id="fund_respond_amount" placeholder="Amount"
+                                                                           class="form-control" required>
+                                                                        <!-- <div class="invalid-feedback">Please Enter Amount</div> -->
+                                                                     </div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <table class="table table-bordered mb-5">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <th width="30%">Approximate SC Beneficiaries
+                                                                  </th>
+                                                                  <td></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td>
+                                                                     <div class="form-group">
+                                                                        <input type="text" name="approx_sc_benif" id=""
+                                                                           class="form-control" required>
+                                                                        <!-- <div class="invalid-feedback">Please Fill</div> -->
+                                                                     </div>
+
+                                                                  </td>
+                                                                  <td></td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <table class="table table-bordered mb-5 has-validated">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <th class="" width="30%">Total proposed cost from Grant-in-aid
+                                                                        (in
+                                                                        Rs.)</th>
+                                                                  <td class="form-group"><input type="text" name="total_proposed_cost" id="" class="form-control"
+                                                                        placeholder="Total Proposed cost" required>
+                                                                     <!-- <div class="invalid-feedback">Please fill</div> -->
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <div>
+                                                            <fieldset class="border p-2 border-dark">
+                                                               <legend class="bg-orange text-white col-md-6 m-0 float-none px-2 fs-5 rounded">
+                                                                  <small>Physical
+                                                                     and
+                                                                     Financial Target</small>
+                                                               </legend>
+                                                               <table class="table table-bordered has-validated">
+                                                                     <thead class="bg-light">
+                                                                     <tr>
+                                                                        <th>Financial Year</th>
+                                                                        <th>Summary/Details of Physical Target <span class="text-danger fw-bolder">*</span> </th>
+                                                                        <th>Financial Year wise break-up of Grants-in-Aid (Rs.)<span class="text-danger fw-bolder">*</span>
+                                                                        </th>
+                                                                     </tr>
+                                                                     </thead>
+                                                                     <tbody class="border-top-0">
+                                                                     <tr>
+                                                                        <td>
+                                                                           <input type="text" name="" id="" class="form-control"
+                                                                              readonly placeholder="2022-2023">
+
+                                                                        </td>
+                                                                        <td class="form-group">
+                                                                           <input type="text" name="details_of_phy_target_infra" id="" class="form-control"
+                                                                              placeholder="Details of Physical Target" required>
+                                                                           <!-- <div class="invalid-feedback"> Please Fill Physical Target</div> -->
+                                                                        </td>
+                                                                        <td class="form-group">
+                                                                           <input type="number" name="financial_year_infra" id="" class="form-control"
+                                                                              placeholder="Financial Year wise break-up" required>
+                                                                           <!-- <div class="invalid-feedback"> Please Fill Physical Target</div> -->
+                                                                        </td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <p class="bg-secondary d-inline p-1 rounded text-white"><strong class="fw-bolder">Note:</strong>
+                                                                  <small> Total of financial year wise required funds should be equal
+                                                                     to
+                                                                     Total
+                                                                     proposed cost from Grant-in-aid. Financial year wise funds
+                                                                     requirement
+                                                                     is
+                                                                     mandatory.</small>
+                                                               </p>
+                                                            </fieldset>
+                                                         </div>
+                                                         <div class=" mt-3">
+                                                            <fieldset class="border p-2 border-dark has-validated">
+                                                               <legend class="bg-orange text-white col-md-6 m-0 float-none px-2 fs-5 rounded">
+                                                                  <small>Declaration</small>
+                                                               </legend>
+                                                               <div class="">
+                                                                  <div class="">
+                                                                     <div class="form-group p-1">
+                                                                        <input type="checkbox" id="" name="infra_declaration" value="Tick Declaration 1" required>
+                                                                        <span>
+                                                                           <small>[A] Certified that adequate suitable land free from
+                                                                              encroachment/encumbrance/dispute and with appropriate
+                                                                              ownership
+                                                                              is
+                                                                              available and the work will not be held up on this
+                                                                              account.</small>
+                                                                        </span> <br/>
+                                                                        <!-- <div class="invalid-feedback">Please Tick</div> -->
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="">
+                                                                     <div class="form-group p-1">
+                                                                        <input type="checkbox" id="" name="infra_declaration1" value="Tick Declaration 2" required>
+                                                                        <span>
+                                                                           <small>[B] Certified that the cost estimate, site map and
+                                                                              building
+                                                                              plan
+                                                                              (Where applicable) have been prepared by PWD/authorized
+                                                                              agency
+                                                                              and
+                                                                              are
+                                                                              duly signed by the Executive Engineer or above.</small>
+                                                                        </span><br/>
+                                                                        <!-- <div class="invalid-feedback">Please Tick</div> -->
+                                                                     </div>
+
+                                                                  </div>
+                                                               </div>
+                                                            </fieldset>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="shadow-sm radius rounded mb-3 income_gen_chk p-2"
+                                                      style="display: none;">
+                                                      <h5 class="text-dark fw-bolder">Income Generation Activity</h5>
+                                                      <div class="row">
+                                                         <div class="col-md-4 has-validated">
+                                                            <label for="group" class=" control-label fw-bolder">Domain<span
+                                                                  class="text-danger fw-bolder">*</span></label>
+                                                            <div class="form-group">
+                                                               <select name="domain_income" id="" class="form-select" required>
+                                                                  <option value="">---Select Domain---</option>
+                                                                  <option value="">AGRICULTURE AND SOIL CONSERVATION</option>
+                                                                  <option value="">ANIMAL HUSBANDARY</option>
+                                                                  <option value="">COOPERATIVES</option>
+                                                                  <option value="">FISHERIES</option>
+                                                                  <option value="">FOOD PROCESSING</option>
+                                                                  <option value="">FORESTRY ECOLOGY AND ENVIRONMENT</option>
+                                                                  <option value="">HANDICRAFTS AND HANDLOOMS</option>
+                                                                  <option value="">HORTICLTURE</option>
+                                                                  <option value="">INDUSTRY, SERVICE AND BUSINESS</option>
+                                                                  <option value="">MINOR IRRIGATION</option>
+                                                               </select>
+                                                               <!-- <div class="invalid-feedback">Please Select Domain</div> -->
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-md-4 has-validated">
+                                                            <label for="group" class=" control-label fw-bolder">Sub Domain
+                                                               <span class="text-danger fw-bolder">*</span></label>
+                                                            <div class="form-group w-auto">
+                                                               <select name="sub_domain_income" id="" class="form-select" required>
+                                                                  <option value="">-- Select Sub Domain</option>
+                                                                  <option value="">Training-cum-demonstration to Scheduled Castes
+                                                                     farmers
+                                                                  </option>
+                                                                  <option value="">Distribution of quality seeds/fertilizers/pesticides
+                                                                     etc.
+                                                                  </option>
+                                                                  <option value="">High yielding variety programme in SC cultivators
+                                                                     land
+                                                                  </option>
+                                                                  <option value="">Commercial crops programme in Scheduled Caste
+                                                                     cultivators
+                                                                     land</option>
+                                                                  <option value="">Honey Bee keeping and processing</option>
+                                                                  <option value="">Sericulture and related activities</option>
+                                                                  <option value="">Others</option>
+                                                               </select>
+                                                               <!-- <div class="invalid-feedback">Please Select Sub Domain</div> -->
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-md-4">
+                                                            <label class="control-label fw-bolder fs-6">Is the executing
+                                                               agency
+                                                               identified ?</label>
+                                                            <div class="form-control d-block  p-2 lh-sm mb-2">
+                                                               <div class=" form-check-inline">
+                                                                  <input class="form-check-label pointer" type="radio" name="agency_iden"
+                                                                     id="execu_agency_yes">
+                                                                  <label class="form-check-label">
+                                                                     Yes
+                                                                  </label>
+                                                               </div>
+                                                               <div class="form-check-inline">
+                                                                  <input class="form-check-label pointer" type="radio" name="agency_iden"
+                                                                     id="execu_agency_no">
+                                                                  <label class="form-check-label" >
+                                                                     No
+                                                                  </label>
+                                                               </div>
+                                                            </div>
+                                                            <div class="execu_agency has-validated" style="display: none;">
+                                                               <label for="agency_iden" class="form-label fw-bolder"><small>Executing
+                                                                     Agency</small></label><span class="text-danger fw-bolder">*</span>
+                                                               <div class="form-group">
+                                                                  <select name="exec_agency_income" id="" class="form-select" required>
+                                                                     <option value="">--Select Executing Agency--</option>
+                                                                     <option value="">KKY agency, 635 A-win shastri bhavan new delhi
+                                                                     </option>
+                                                                  </select>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="mt-3">
+                                                         <table class="table table-bordered has-validated">
+                                                            <thead class="bg-light">
+                                                               <tr>
+                                                                  <th>Total cost of activities/assets per
+                                                                        beneficiary<span class="text-danger fw-bolder">*</span></th>
+                                                                  <th>No. of Beneficiaries proposed to be
+                                                                        supported
+                                                                        from
+                                                                        Grant-in-aid<span class="text-danger fw-bolder">*</span></th>
+                                                               </tr>
+                                                               </thead>
+                                                               <tbody class="border-top-0">
+                                                               <tr>
+                                                                  <td class="form-group"><input type="number" name="total_cost_acti_income" class="form-control" placeholder="Unit Cost"
+                                                                        required>
+                                                                     <!-- <div class="invalid-feedback">Please fill Total Cost of Activity</div> -->
+                                                                  </td>
+                                                                  <td class="form-group"><input type="text" class="form-control" name="benieficiaries_income"
+                                                                        placeholder="Number of Beneficiaries proposed to be supported from Grant-in-aid"
+                                                                        required>
+                                                                     <!-- <div class="invalid-feedback">Please fill Benieficiaries Proposed</div> -->
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                      <div>
+                                                         <fieldset class="border p-2 border-dark">
+                                                            <legend class="bg-orange text-white col-md-6 m-0 float-none px-2 fs-5 rounded"><small>Breakup
+                                                                  of
+                                                                  average cost
+                                                                  of activity/asset
+                                                                  per beneficiary</small>
+                                                            </legend>
+                                                            <div>
+                                                               <table class="table table-bordered has-validated">
+                                                                     <thead>
+                                                                        <tr class="bg-light">
+                                                                           <th>Loan From Bank/Corporation (in Rs.)<span class="text-danger">*</span></th>
+                                                                           <th>Own Sources / Beneficiary Contribution (in Rs.)</th>
+                                                                           <th colspan="2">Financial assistance (Subsidy)</th>
+                                                                           <th>Others if any (in Rs.)</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                           <td rowspan="2"></td>
+                                                                           <td rowspan="2"></td>
+                                                                        </tr>
+                                                                        <tr class="bg-light">
+                                                                           <th>State funds (in Rs.)</th>
+                                                                           <th>Grant-in-aid from PMAJAY (in Rs.)
+                                                                           </th>
+                                                                        </tr>
+                                                                     </thead>
+                                                                     <tbody class="border-top-0">
+                                                                        <tr>
+                                                                           <td>
+                                                                              <div class="form-group">
+                                                                                 <input type="number" name="loan_from_bank_income" id="" class="form-control"
+                                                                                    placeholder="Amount" required>
+                                                                                 <!-- <div class="invalid-feedback">Please Fill Amount</div> -->
+                                                                              </div>
+                                                                           </td>
+                                                                           <td>
+                                                                              <div class="form-group">
+                                                                                 <input type="number" name="contribution_income" id="" class="form-control"
+                                                                                    placeholder="Amount" required>
+                                                                                 <!-- <div class="invalid-feedback">Please Fill Amount</div> -->
+                                                                              </div>
+                                                                           </td>
+                                                                           <td>
+                                                                              <div class="form-group">
+                                                                                 <input type="number" name="state_fund_income" id="" class="form-control"
+                                                                                    placeholder="Amount" required>
+                                                                                 <!-- <div class="invalid-feedback">Please Fill Amount</div> -->
+                                                                              </div>
+                                                                           </td>
+                                                                           <td>
+                                                                              <div class="form-group">
+                                                                                 <input type="text" name="" id="" class="form-control"
+                                                                                    placeholder="0" readonly>
+                                                                              </div>
+                                                                           </td>
+                                                                           <td>
+                                                                              <div class="form-group">
+                                                                                 <input type="text" name="others_amt_income" id="" class="form-control"
+                                                                                    placeholder="Amount" required>
+                                                                                 <div class="invalid-feedback">Please Fill Amount</div>
+                                                                              </div>
+                                                                           </td>
+                                                                        </tr>
+                                                                     </tbody>
+                                                               </table>
+                                                               <p class="bg-secondary d-inline p-1 rounded text-white"><small><strong class="fw-bolder">Note:</strong>
+                                                                     Grants-in-Aid
+                                                                     from
+                                                                     PMAJAY would be upto Rs. 50,000 or 50% of the acquisition/creation
+                                                                     of
+                                                                     assets
+                                                                     cost, whichever is less.</small></p>
+                                                            </div>
+                                                            <table class="table table-bordered mt-4 has-validated">
+                                                               <tbody>
+                                                                  <tr>
+                                                                     <th width="30%">Total proposed cost from Grant-in-aid (in Rs.)
+                                                                     </th>
+                                                                     <td class="form-group">
+                                                                        <input type="text" name="total_proposed_cost_income" id="" class="form-control"
+                                                                           placeholder="Total Proposed cost" required>
+                                                                        <!-- <div class="invalid-feedback">Please fill</div> -->
+                                                                     </td>
+
+                                                                  </tr>
+                                                               </tbody>
+                                                            </table>
+                                                            <div class="mt-4">
+                                                               <fieldset class="border p-2 border-dark">
+                                                                  <legend class="bg-orange text-white col-md-6 m-0 float-none px-2 fs-5 rounded">
+                                                                     <small>Physical and Financial Target</small>
+                                                                  </legend>
+                                                                  <div class="row">
+                                                                     <div class="col-md-12">
+                                                                        <table id="" class="table table-bordered has-validated">
+                                                                           <thead class="bg-light fw-bolder">
+                                                                              <tr>
+                                                                                 <th>Financial Year</th>
+                                                                                 <th>Summary/Details of Physical target
+                                                                                    <span class="text-danger">*</span>
+                                                                                 </th>
+                                                                                 <th>Financial Year wise break-up of Grants-in-Aid (in Rs.)<span class="text-danger">*</span>
+                                                                                 </th>
+                                                                              </tr>
+                                                                           </thead>
+                                                                           <tbody class="border-top-0">
+                                                                              <tr>
+                                                                                 <td>
+                                                                                    <input type="text" name="" id=""
+                                                                                       class="form-control" readonly
+                                                                                       placeholder="2022-2023">
+                                                                                 </td>
+                                                                                 <td class="form-group">
+                                                                                    <input type="text" name="details_of_phy_target_income" id=""
+                                                                                       class="form-control"
+                                                                                       placeholder="Details of Physical Target"
+                                                                                       required>
+                                                                                    <!-- <div class="invalid-feedback">Please fill Physical Target Details</div> -->
+                                                                                 </td>
+                                                                                 <td class="form-group">
+                                                                                    <input type="number" name="financial_year_income" id=""
+                                                                                       class="form-control"
+                                                                                       placeholder="Financial Year wise break-up"
+                                                                                       required>
+                                                                                    <!-- <div class="invalid-feedback">Please fill Financial Year </div> -->
+                                                                                 </td>
+                                                                              </tr>
+                                                                           </tbody>
+                                                                        </table>
+                                                                        <p class="bg-secondary d-inline p-1 rounded text-white"><strong class="fw-bolder">Note:</strong>
+                                                                           <small>Total of financial year
+                                                                              wise required funds should be equal to Total proposed
+                                                                              cost
+                                                                              from
+                                                                              Grant-in-aid.
+                                                                              Financial year wise funds requirement is
+                                                                              mandatory.</small>
+                                                                        </p>
+                                                                     </div>
+                                                                  </div>
+                                                            </div>
+                                                         </fieldset>
+                                                      </div>
+                                                   </div>
+                                                   <div class="">
+                                                      <span class="float-end mb-3 collapsed p-1">
+                                                         <button type="button" class="btn btn-success btn-sm" name="type_of_intervention" data-bs-toggle="collapse" data-bs-target="#collapseMenu3" aria-expanded="true" aria-controls="collapseMenu3">Next</button>
+                                                      </span>
+                                                      <span class="float-end mb-3 collapsed p-1" data-bs-toggle="collapse" data-bs-target="#collapseMenu1" aria-expanded="true" aria-controls="collapseMenu1">
+                                                         <button type="button" class="btn btn-secondary btn-sm">Previous</button>
+                                                      </span>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 bg-white shadow-md rounded mb-3" >
+                                    <div class="accordion-item bg-transparent p-0 border-0">
+                                       <h2 class="accordion-header" id="headingProjectCost">
+                                          <button
+                                             class="accordion-button py-2 px-3 my-1 d-flex align-items-center text-dark shadow-none bg-transparent leftnav rounded-0 collapsed w-auto"
+                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu3"
+                                             aria-expanded="true" aria-controls="collapseMenu3">
+                                             <span class="me-3 text-orange fw-bold mt-1">
+                                                <h5>Total Project Cost (Rs)</h5>
+                                             </span>
+                                          </button>
+                                       </h2>
+                                       <div id="collapseMenu3" class="accordion-collapse collapse" aria-labelledby="headingProjectCost" data-bs-parent="#accordion">
+                                          <div class="container-fluid">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <table class="table table-bordered">
+                                                         <thead class="bg-light">
+                                                         <tr>
+                                                            <th class="text-center">Intervention Type </th>
+                                                            <th class="text-center"> Total cost (in Rs.)</th>
+                                                            <th class="text-center">Total cost under Grant-in-aid (in Rs.)</th>
+
+                                                         </tr>
+                                                         </thead>
+                                                         <tbody class="border-top-0">
+                                                         <tr>
+                                                            <td>Skill Development </td>
+                                                            <td><input type="text" class="form-control n  numToWord" value="0"
+                                                                  id="stt" name="stt" placeholder="Amount"
+                                                                  onkeypress="JavaScript:return isNumber(event)"
+                                                                  data-skip-name="true" readonly="" maxlength="9"><span
+                                                                  style="color: rgb(0, 128, 0); font-weight: 700; text-transform: capitalize; font-size: 90%;"></span>
+                                                            </td>
+                                                            <td><input type="text" class="form-control m  numToWord" id="sst"
+                                                                  value="0" name="sst" placeholder="Amount"
+                                                                  onkeypress="JavaScript:return isNumber(event)"
+                                                                  data-skip-name="true" readonly="" maxlength="9"><span
+                                                                  style="color: rgb(0, 128, 0); font-weight: 700; text-transform: capitalize; font-size: 90%;"></span>
+                                                            </td>
+
+                                                         </tr>
+                                                         <tr>
+                                                            <td>Infrastructure Development </td>
+                                                            <td><input type="text" value="0" class="form-control n  numToWord"
+                                                                  id="itt" name="itt" placeholder="Amount"
+                                                                  onkeypress="JavaScript:return isNumber(event)"
+                                                                  data-skip-name="true" readonly="" maxlength="9"><span
+                                                                  style="color: rgb(0, 128, 0); font-weight: 700; text-transform: capitalize; font-size: 90%;"></span>
+                                                            </td>
+                                                            <td><input type="text" value="0" class="form-control m  numToWord"
+                                                                  id="ist" name="ist" placeholder="Amount"
+                                                                  onkeypress="JavaScript:return isNumber(event)"
+                                                                  data-skip-name="true" readonly="" maxlength="9"><span
+                                                                  style="color: rgb(0, 128, 0); font-weight: 700; text-transform: capitalize; font-size: 90%;"></span>
+                                                            </td>
+
+                                                         </tr>
+                                                         <tr>
+                                                            <td> Income Generation Activity</td>
+                                                            <td><input type="text" value="0" class="form-control n  numToWord"
+                                                                  id="tt" name="tt" placeholder="Amount"
+                                                                  onkeypress="JavaScript:return isNumber(event)"
+                                                               data-skip-name="true" readonly="" maxlength="9"><span
+                                                               style="color: rgb(0, 128, 0); font-weight: 700; text-transform: capitalize; font-size: 90%;"></span>
+                                                         </td>
+                                                         <td><input type="text" class="form-control m  numToWord" value="0"
+                                                               id="st" name="st" placeholder="Amount"
+                                                               onkeypress="JavaScript:return isNumber(event)"
+                                                               data-skip-name="true" readonly="" maxlength="9"><span
+                                                               style="color: rgb(0, 128, 0); font-weight: 700; text-transform: capitalize; font-size: 90%;"></span>
+                                                         </td>
+
+                                                      </tr>
+                                                      <tr>
+                                                         <td><b>Total Cost</b> </td>
+                                                         <td><input type="text" value="0" class="form-control  numToWord"
+                                                               id="gst" name="gst" placeholder="Amount"
+                                                               onkeypress="JavaScript:return isNumber(event)"
+                                                               data-skip-name="true" readonly="" maxlength="9"><span
+                                                               style="color: rgb(0, 128, 0); font-weight: 700; text-transform: capitalize; font-size: 90%;"></span>
+                                                         </td>
+                                                         <td><input value="0" type="text" class="form-control  numToWord"
+                                                               id="gtt" name="gtt" placeholder="Amount"
+                                                               onkeypress="JavaScript:return isNumber(event)"
+                                                               data-skip-name="true" readonly="" maxlength="9"><span
+                                                               style="color: rgb(0, 128, 0); font-weight: 700; text-transform: capitalize; font-size: 90%;"></span>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                             <div class="">
+                                                <span class="float-end mb-3 collapsed p-1" data-bs-toggle="collapse" data-bs-target="#collapseMenu2" aria-expanded="true" aria-controls="collapseMenu2">
+                                                   <button type="button" class="btn btn-secondary btn-sm">Previous</button>
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="text-end mb-3">
+                                 <button type="submit" class="btn btn-success btn-sm">Save</button>
+                                 <button type="button" class="btn btn-secondary btn-sm preview" id="field_show_preview" data-bs-toggle="modal" data-bs-target="#form_preview">
+                                    Preview
+                                  </button>
+                                 <button type="button" class="btn btn-danger btn-sm">cancel</button>
+                                 <!-- <div class="modal-dialog modal-xl">...</div> -->
+                              </div>
+                              <div class="modal fade" id="form_preview"  aria-labelledby="formPreview" aria-hidden="true">
+                                 <div class="modal-dialog modal-xl">
+                                    <!-- <div class="modal"> -->
+                                       <fieldset class=" border p-2 border-dark field_show modal-content">
+                                          <legend class="bg-orange text-white col-md-6 m-0 float-none px-2 fs-5 rounded">Project Creations</legend>
+                                          <div >
+                                             <button type="button" class="btn float-end" data-bs-dismiss="modal">
+                                                <span class="material-symbols-outlined">
+                                                   close
+                                                   </span>
+                                             </button>
+                                          </div>
+                                          <div class="row field_output" id="form_preview">
+                                             <h4 class="fw-bolder text-orange">Project Information</h4>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Project Title</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary fs-6">Description and objective.....</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">About the target to be achieved</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <h4 class="fw-bolder text-orange mt-1">Expected Timeline</h4>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Expected Start Date</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Expected End Date</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <h4 class="fw-bolder text-orange mt-1">Type of Intervantion/Project</h4>
+                                             <div class="col-md-12">
+                                                <label for="" class="control-label fw-bolder text-secondary">Intervention Selection</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control" id="development_pre">
+                                                </div>
+                                             </div>
+                                             <h5 class="fw-bolder mt-1">Skill Development</h5>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Is the executing agency identified ?</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control skill_agency1 skill_executing" id="">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Type of Skill</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control skill_type_pre" id="">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Institute Name</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control institute_name_pre">
+                                                </div>
+                                             </div>
+                                             <h6 class="fw-bolder mt-1">Break up of per beneficiary Cost</h6>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Cost per beneficiary (in Rs.)</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">No. of Beneficiaries proposed....</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Anticipated expenditure....</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Declaration</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control " id="skill_decl_pre">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Total proposed cost... (in Rs.)</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <h6 class="fw-bolder mt-1">Physical and Financial Target</h6>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Financial Year</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Summary/Details of Physical Target</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Financial Year wise break-up... (in Rs.)</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <h5 class="fw-bolder mt-1">Infrastructure Development</h5>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Area Type</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control area_type_infra town_value village_value ">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Village</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class=" form-control ">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Town</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class=" form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Rural Checkbox</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control rural_chk_pre">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Is the executing agency identified ?</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control infra_agency1 infra_executing_pre">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Type of Infrastrucure</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control infra_type_pre">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Infrastructure Description</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Total cost of construction</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Funds proposed..(Please Specify)</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Funds proposed.. (Total cost of cons....)</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Funds proposed under Grant-in-aid</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Approximate SC Beneficiaries</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Total proposed cost... (in Rs.)</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <h6 class="fw-bolder mt-1">Physical and Financial Target</h6>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Financial Year</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Summary/Details of Physical Target</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Financial Year wise break-up... (in Rs.)</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label for="" class="control-label fw-bolder text-secondary">Declaration</label>
+                                                <div class="form-group">
+                                                   <input type="text" readonly class="form-control infra_decl_pre" id="infra_decl_pre1">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </fieldset>
+                                    <!-- </div> -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+         </div>
+      </div>
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/apexcharts.js"></script>
+   <script src="js/chart.js"></script>
+   <script src="js/bootstrap-datepicker.min.js"></script>
+   <script src="js/bootstrapValidator.min.js"></script>
+   <script src="js/validator.js"></script>
+   <script src="js/cutomized.js"></script>
+   <script>
+      $(document).ready(function () {
+         $("#skill_chk_list").click(function () {
+            if ($(this).is(":checked")) {
+               $(".skill_chk").show();
+               // $(".wheather-none").hide();
+            } else {
+               $(".skill_chk").hide();
+            }
+         });
+         $("#field_show_preview").click(function () {
+            if ($(this).on(":checked")) {
+               $(".field_show").show();
+               // $(".project_creation_hide").hide();
+               // $(".wheather-none").hide();
+            } else {
+               // $(".project_creation_hide").show();
+               $(".field_show").hide();
+            }
+         });
+         $("#skill_agency_yes").click(function () {
+            if ($(this).is(":checked")) {
+               $(".skill_agency").show();
+               $(".wheather-none").hide();
+            } else {
+               $(".wheather-none").hide();
+            }
+         });
+
+         $("#skill_agency_no").click(function () {
+            if ($(this).is(":checked")) {
+               $(".skill_agency").hide();
+            } else {
+               $(".wheather-yes").hide();
+            }
+         });
+         $("#infra_chk_list").click(function () {
+            if ($(this).is(":checked")) {
+               $(".infra_chk").show();
+               // $(".wheather-none").hide();
+            } else {
+               $(".infra_chk").hide();
+            }
+         });
+         $("#infra_devl_list").click(function () {
+            if ($(this).is(":checked")) {
+               $(".infra_devl").show();
+               // $(".wheather-none").hide();
+            } else {
+               $(".infra_devl").hide();
+            }
+         });
+         $("#rural_chk_list").click(function () {
+            if ($(this).is(":checked")) {
+               $(".rural_chk").show();
+               $(".urban_rural").show();
+               $(".urban_chk").hide();
+               // $(".wheather-none").hide();
+            }
+            else {
+               $(".urban_rural").hide();
+            }
+         });
+         $("#urban_chk_list").click(function () {
+            if ($(this).is(":checked")) {
+               $(".urban_chk").show();
+               $(".urban_rural").show();
+               $(".rural_chk").hide();
+               // $(".wheather-none").hide();
+            } 
+            else {
+               $(".urban_rural").hide();
+            }
+         });
+         $("#infra_agency_yes").click(function () {
+            if ($(this).is(":checked")) {
+               $(".infra_agency").show();
+               $(".wheather-none").hide();
+            } else {
+               $(".wheather-none").hide();
+            }
+         });
+         $("#infra_agency_no").click(function () {
+            if ($(this).is(":checked")) {
+               $(".infra_agency").hide();
+            } else {
+               $(".wheather-yes").hide();
+            }
+         });
+         $("#income_gen_chk_list").click(function () {
+            if ($(this).is(":checked")) {
+               $(".income_gen_chk").show();
+               // $(".wheather-none").hide();
+            } else {
+               $(".income_gen_chk").hide();
+            }
+         });
+         $("#execu_agency_yes").click(function () {
+            if ($(this).is(":checked")) {
+               $(".execu_agency").show();
+               $(".wheather-none").hide();
+            } else {
+               $(".wheather-none").hide();
+            }
+         });
+         $("#execu_agency_no").click(function () {
+            if ($(this).is(":checked")) {
+               $(".execu_agency").hide();
+            } else {
+               $(".wheather-yes").hide();
+            }
+         });
+         /*Create Table Clone */
+
+         $("body").on("click", '#btnClone', function () {
+
+            var validator = $('#commentFormm1').data('bootstrapValidator');
+            $count = $(".clonedInput").length;
+            if ($count < 3) {
+
+               $('#InputVDP tbody').append('<tr class="clonedInput"><td> <div class="form-group"><input type="text" class="textlimt form-control " name="" placeholder="Details"  required></div><span></span></td><td><div class="form-group"><input type="number" class="fo form-control numToWord" name="" placeholder="Amount"  maxlength="9" required><span></span></div></td></tr>');
+
+               $(".textlimt,.fo").each(function () {
+                  validator.addField($(this));
+               });
+            }
+         });
+
+         /*Delete Table Clone */
+
+
+         $("body").on("click", '#btnCloneR', function () {
+            $count = $(".clonedInput").length;
+            if ($count > 1) {
+               $('#InputVDP  tr:last').remove();
+            }
+         });
+      });
+
+      $(document).ready(function () {
+         var minLength = 50;
+         var maxLength = 1000;
+         $(".min-max").on("keydown keyup change", function () {
+            var value = $(this).val();
+            if (value.length < minLength)
+               $(".min-max-message").text("Minimum " + minLength + " character required.");
+            else if (value.length > maxLength)
+               $(".min-max-message").text("Maximum " + maxLength + " character allowed.");
+            else
+               $(".min-max-message").text("");
+			$('.min-max').keyup(function () {
+				var len = maxLength - $(this).val().length;
+				$('.GFG').text(len);
+			});
+         });
+
+         var minLength = 50;
+         var maxLength = 1000;
+         $(".min-max-target").on("keydown keyup change", function () {
+            var value = $(this).val();
+            if (value.length < minLength)
+               $(".min-max-target-message").text("Minimum " + minLength + " character required.");
+            else if (value.length > maxLength)
+               $(".min-max-target-message").text("Maximum " + maxLength + " character allowed.");
+            else
+               $(".min-max-target-message").text("");
+               $('.min-max-target').keyup(function () {
+				var len = maxLength - $(this).val().length;
+				$('.GFG1').text(len);
+			});
+         });
+      });
+      // Preview condetion......
+      $(document).ready(function () {
+                
+                $(document).click(function () {
+                    var formValues = [];
+                    // get values from inputs in first fieldset
+                    $('.form_view :input').each(function () {
+                        formValues.push($(this).val());
+                    });
+                    formValues.pop(); //remove the button from input values
+                  //   console.log(formValues);
+                    // set values in second fieldset
+                    $('.field_output :input').each(function (index) {
+                        if (formValues[index]) {
+                           field_val = formValues.filter(item => item);
+                            $(this).val(formValues[index]);  
+                        }
+                    });
+                    
+                     console.log(field_val);
+                    
+                  //   $('.current').removeClass('current').hide().next().show('current').addClass('current');
+
+                });
+                //Development.....
+               $(document).click(function() {
+                     var sel = $('input[name=development]:checked').map(function(_, el) {
+                     return $(el).val();
+                  }).get();
+                  console.log(sel);
+                     $('#development_pre').val(sel);
+                  })
+                  // Skill declaration....
+                  $(document).click(function() {
+                     var dec_skill = $('input[name=skill_declaration]:checked').map(function(_, dec) {
+                     return $(dec).val();
+                  }).get();
+                  console.log(dec_skill);
+                     $('#skill_decl_pre').val(dec_skill);
+                  })
+                  //infra declaration....
+                  $(document).click(function() {
+                     var dec_infra = $('input[name=infra_declaration]:checked').map(function(_, dec_inf) {
+                     return $(dec_inf).val();
+                  }).get();
+                  console.log(dec_infra);
+                     $('.infra_decl_pre').val(dec_infra);
+                  })
+                  $(document).click(function() {
+                     var dec_infra1 = $('input[name=infra_declaration1]:checked').map(function(_, dec_infr) {
+                     return $(dec_infr).val();
+                  }).get();
+                  console.log(dec_infra1);
+                     $('#infra_decl_pre1').val(dec_infra1);
+                  })
+                  //area type..... rural and urban
+                  $(document).click(function() {
+                     var area_type = $('input[name=loc_iden]:checked').map(function(_, atype) {
+                     return $(atype).val();
+                  }).get();
+                  console.log(area_type);
+    
+                     $('.area_type_infra').val(area_type);
+                  })
+                  $(document).click(function() {
+                     var rural_pre = $('.village_value').map(function(_, rp) {
+                     return $(rp).val();
+                  }).get();
+                  console.log(rural_pre);
+    
+                     $('.village_value').val(rural_pre);
+                  })
+                  $(document).click(function() {
+                     var urban_pre = $('.town_value').map(function(_, up) {
+                     return $(up).val();
+                  }).get();
+                  console.log(urban_pre);
+    
+                     $('.town_value').val(urban_pre);
+                  })
+                  $(document).click(function() {
+                     var rural_value_pre = $('input[name=rural_chk_preview]:checked').map(function(_, rv) {
+                     return $(rv).val();
+                  }).get();
+                  console.log(rural_value_pre);
+    
+                     $('.rural_chk_pre').val(rural_value_pre);
+                  })
+                  //skill identified agency......
+                  $(document).click(function() {
+                     var sel_agency = $('input[name=identify_agency]:checked').map(function(_, el) {
+                     return $(el).val();
+                  }).get();
+                  console.log(sel_agency);
+    
+                     $('.skill_agency1').val(sel_agency);
+                  })
+                  $(document).click(function() {
+                     var sel_executing = $('.skill_executing').map(function(_, el) {
+                     return $(el).val();
+                  }).get();
+                  console.log(sel_executing)
+                     $('.skill_executing').val(sel_executing);
+                  })
+                  //infra agency....
+                  $(document).click(function() {
+                     var sel_agency1 = $('input[name=identify_agency3]:checked').map(function(_, el) {
+                     return $(el).val();
+                  }).get();
+                  console.log(sel_agency1);
+    
+                     $('.infra_agency1').val(sel_agency1);
+                  })
+                  $(document).click(function() {
+                     var infra_executing = $('.infra_executing_pre').map(function(_, ie) {
+                     return $(ie).val();
+                  }).get();
+                  console.log(infra_executing)
+                     $('.infra_executing_pre').val(infra_executing);
+                  })
+                  $(document).click(function() {
+                     var sel_infra_type = $('#infra_type_preview').map(function(_, ei) {
+                     return $(ei).val();
+                  }).get();
+                  console.log(sel_infra_type);
+    
+                     $('.infra_type_pre').val(sel_infra_type);
+                  })
+                  
+                  $(document).click(function() {
+                     var sel_skill_type = $('#skill_type_preview').map(function(_, el) {
+                     return $(el).val();
+                  }).get();
+                  console.log(sel_skill_type);
+    
+                     $('.skill_type_pre').val(sel_skill_type);
+                  })
+                  $(document).click(function() {
+                     var institute_name_skill = $('#institute_name_preview').map(function(_, el) {
+                     return $(el).val();
+                  }).get();
+                  console.log(institute_name_skill);
+    
+                     $('.institute_name_pre').val(institute_name_skill);
+                  })
+
+
+               //  $('.previous').click(function () {
+               //      $('.current').removeClass('current').hide().prev().show().addClass('current');
+
+               //  });
+
+
+
+            });
+      // $(document).ready(function () {
+      //    //Project Information.......
+      //    $('button[name="project_next"]').attr('disabled', true);
+      //    $('input[type="text"],textarea,textarea').on('keyup', function () {
+      //       var text_value = $('input[name="project_title"]').val();
+      //       var textarea_value = $("#project_objec").val();
+      //       var textarea_value1 = $("#project_target").val();
+      //       if (textarea_value != '' && textarea_value1 != '' && text_value != '') {
+      //          $('button[name="project_next"]').attr('disabled', false);
+      //       } else {
+      //          $('button[name="project_next"]').attr('disabled', true);
+      //       }
+      //    });
+      //    //Expected Timeline......
+      //    $('button[name="Expected_next"]').attr('disabled', true);
+      //    $('input[type="input"],input[type="input"]').on('keyup', function () {
+      //       var text_value = $('input[name="expected_start_date"]').val();
+      //       var text_value1 = $('input[name="expected_end_date"]').val();
+      //       if (text_value != '' && text_value1 != '') {
+      //          $('button[name="Expected_next"]').attr('disabled', false);
+      //       } else {
+      //          $('button[name="Expected_next"]').attr('disabled', true);
+      //       }
+      //    });
+      //    // Skill Development.......
+      //    $('button[name="type_of_intervention"]').attr('disabled', true);
+      //    $('#skill_type,#cost_per_ben,#no_of_ben,#total_pro_cost_skill,#details_of_phy_target_skill,#financial_year_skill').on('keyup', function () {
+      //       // var text_value5 = $("#identify_agency").is(":checked").val();
+      //       var text_value6 = $("#skill_type").val();
+      //       var text_value = $("#cost_per_ben").val();
+      //       var text_value1 = $("#no_of_ben").val();
+      //       var text_value2 = $("#total_pro_cost_skill").val();
+      //       var text_value3 = $("#details_of_phy_target_skill").val();
+      //       var text_value4 = $("#financial_year_skill").val();
+      //       if (text_value6 != '' && text_value != '' && text_value1 != '' && text_value2 != '' && text_value3 != '' && text_value4 != '') {
+      //          $('button[name="type_of_intervention"]').attr('disabled', false);
+      //       } else {
+      //          $('button[name="type_of_intervention"]').attr('disabled', true);
+      //       }
+      //    });
+      // });
+   </script>
+</body>
+
+</html>

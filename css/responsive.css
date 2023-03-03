@@ -1,0 +1,23 @@
+@media(max-width: 991px){
+	body{
+		zoom: 80%;
+	}
+}
+@media(max-width: 767px){
+	body{
+		zoom:70%;
+	}
+}
+@media(max-width: 400px){
+	body{
+		zoom:60%;
+	}
+	.tooltip{
+		display: none;
+	}
+}
+@media(max-width: 300px){
+	body{
+		zoom:40%;
+	}
+}
